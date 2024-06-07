@@ -1,0 +1,71 @@
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $textBlack;
+
+  transform: translateX(-100%);
+  transition: all $duration;
+
+
+  &__container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $bg;
+    @extend %shadow;
+    margin: 0 8px;
+    padding: 20px 18px;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.85px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    padding: 11px 14px 11px 14px;
+    border-radius: 30px;
+    border: 1px solid $grey;
+    opacity: 0px;
+
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.45px;
+      color: $grey;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &-add {
+      padding: 10px 34px;
+    }
+  }
+}

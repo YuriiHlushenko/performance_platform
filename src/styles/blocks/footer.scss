@@ -1,0 +1,10 @@
+.footer {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  padding: 13px;
+  display: flex;
+  background: $main;
+  justify-content: flex-end;
+}

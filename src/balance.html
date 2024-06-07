@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neurolide</title>
+  <title>Баланс Neurolide</title>
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
   <link rel="stylesheet" href="./styles/main.scss">
   <script type="text/javascript" src="scripts/main.js" defer></script>
@@ -92,8 +92,8 @@
   <!--#region main -->
   <main class="main">
     <div class="page__title">
-      <img class="icon" src="images/home.svg" alt="головна">
-      <h5 class="page__title-h5">Головна</h5>
+      <img class="icon" src="images/card.svg" alt="Баланс">
+      <h5 class="page__title-h5">Баланс</h5>
     </div>
 
     <div class="page__buttons">
@@ -116,28 +116,6 @@
         </button>
       </div>
 
-      <div class="info">
-        <div class="info__container">
-          <h6 class="info__title">Індекс</h6>
-          <p class="info__value">601,78</p>
-        </div>
-
-        <div class="info__container">
-          <h6 class="info__title">Зачислення</h6>
-          <p class="info__value">3002,49</p>
-        </div>
-
-        <div class="info__container">
-          <h6 class="info__title">Бюджет</h6>
-          <p class="info__value">216</p>
-        </div>
-
-        <div class="info__container">
-          <h6 class="info__title">Сповіщення</h6>
-          <p class="info__value">212</p>
-        </div>
-      </div>
-
       <button class="button button--light">Особистий баланс</button>
 
       <div class="main__balance">
@@ -150,6 +128,74 @@
       <button id="withdraw" class="button">Вивести баланс</button>
       <button id="topUp" class="button">Поповнити баланс</button>
     </div>
+
+    <div class="main__container">
+      <button class="button button--light">Особистий баланс</button>
+    </div>
+
+    <div class="users__payments users__payments--balance">
+      <div class="users__payments-status">
+        <div class="page__label users__payments-status--label">
+          Статус
+        </div>
+
+        <button class="button button__status page__regular">
+          Прямує до
+        </button>
+      </div>
+
+      <div class="users__payments-roll users__payments-roll--balance" id="rollList">
+        <div class="page__label">
+          Номер
+        </div>
+        <div class="page__value users__payments-value">
+          EKG464SJFN17
+        </div>
+
+        <div class="page__label">
+          Дата рахунку
+        </div>
+        <div class="page__value users__payments-value">
+          10 грудня 2024 р.
+        </div>
+
+        <div class="page__label">
+          Дата оплати
+        </div>
+        <div class="page__value users__payments-value">
+          10 грудня 2024 р.
+        </div>
+
+        <div class="page__label">
+          Спосіб оплати
+        </div>
+        <div class="page__value users__payments-value">
+          0077 **** **** 3814 (Visa)
+        </div>
+
+        <div class="page__label">
+          Підписка
+        </div>
+        <div class="page__value users__payments-value">
+          Бонус (річний)
+        </div>
+
+        <div class="page__label">
+          Сума
+        </div>
+        <div class="page__value users__payments-value">
+          $129.88
+        </div>
+      </div>
+      <button class="page__arrow page__arrow-prev">
+        <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+      </button>
+
+      <button class="page__arrow page__arrow-next">
+        <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+      </button>
+    </div>
+
   </main>
   <!--#endregion -->
 

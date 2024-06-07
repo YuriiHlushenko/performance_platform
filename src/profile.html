@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профіль Neurolide</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.svg">
+  <link rel="stylesheet" href="./styles/main.scss">
+  <script type="text/javascript" src="scripts/profile.js" defer></script>
+</head>
+
+<body class="page__body">
+
+  <!--#region header -->
+  <header class="header">
+    <a href="/" class="header__logo">
+      <div class="header__logo-bg">
+        <img src="images/logo.svg" alt="Neurolide" class="header__logo-img">
+      </div>
+      <h1 class="header__logo-title">Neurolide</h1>
+    </a>
+
+    <a href="#menu" class="header__menu"></a>
+  </header>
+  <!--#endregion -->
+
+  <!--#region menu -->
+  <aside class="page__menu menu" id="menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="/" class="menu__link">
+          <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
+          Головна
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="manager.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
+          Менеджер
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="users.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
+          Користувачі
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="chanels.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
+          Медіа канали
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="offers.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
+          Офери
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="profile.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
+          Профіль
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="balance.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
+          Баланс
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a href="support.html" class="menu__link">
+          <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
+          Технічна підтримка
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="menu__cross"></a>
+  </aside>
+  <!--#endregion -->
+
+  <!--#region account -->
+  <div class="page__title">
+    <img class="icon" src="images/profile.svg" alt="Профіль">
+    <h5 class="page__title-h5">Профіль</h5>
+  </div>
+
+  <div class="account">
+    <div class="account__grid">
+      <div class="account__info">
+        <div class="page__label ">
+          Admin id:
+        </div>
+        <div class="page__value">
+          110A
+        </div>
+
+        <div class="apage__label">
+          Ім’я:
+        </div>
+        <div class="page__value">
+          Adela Parkson
+        </div>
+
+        <div class="apage__label">
+          Адреса:
+        </div>
+        <div class="page__value">
+          Khumaltar, Lalitpur
+        </div>
+
+        <div class="apage__label">
+          Номер телефону:
+        </div>
+        <div class="page__value">
+          9841236978
+        </div>
+
+        <div class="apage__label">
+          Email:
+        </div>
+        <div class="page__value">
+          Adela98@gmail.com
+        </div>
+
+        <div class="apage__label">
+          Пароль:
+        </div>
+        <div class="page__value">
+          *******
+        </div>
+      </div>
+
+      <div class="account__managment">
+        <img src="images/avatar.png" alt="" class="account__managment-img">
+
+        <button class="button account__managment-btn">Вихід</button>
+        <button class="button account__managment-btn">Видалити</button>
+      </div>
+    </div>
+
+    <button class="button account__edit">
+      Редагувати особисті дані
+    </button>
+  </div>
+
+  <div class="page__buttons account__buttons">
+    <button class="button button--light">Медіа канали</button>
+    <div class="page__buttons-container">
+      <button class="button" id="addChanel">Додати канал</button>
+    </div>
+  </div>
+
+  <div class="offers offers--chanels">
+    <div class="offers__top offers__top--chanels">
+      <h5 class="offers__top-title page__label">
+        Статус
+      </h5>
+
+      <div class="offers__top-settings">
+        <button class="icon__button" id="editChanel">
+          <img src="images/settings.png" alt="Редагувати канал">
+        </button>
+
+        <button class="icon__button" id="deleteChanel">
+          <img src="images/bin.svg" alt="прийняти">
+        </button>
+      </div>
+    </div>
+
+    <img class="offers__logo" src="images/chanel.png" alt="лого медіа каналу">
+
+    <div class="page__label offers__label">
+      Назва
+    </div>
+    <div class="page__value offers__value offers__value--chanels offers__value--creators">
+      Кріейтори
+    </div>
+    <div class="offers__value-subtitle">
+      Ком’юніті українських АІ-крінйторів
+    </div>
+
+    <div class="page__label offers__label">
+      Посилання
+    </div>
+    <div class="page__value offers__value offers__value--chanels">
+      wordwall.net
+    </div>
+
+    <div class="page__label offers__label">
+      Підписники
+    </div>
+    <div class="page__value offers__value offers__value--chanels">
+      20 989
+    </div>
+
+    <div class="page__label offers__label">
+      Перегляди
+    </div>
+    <div class="page__value offers__value offers__value--chanels">
+      9 897
+    </div>
+
+    <div class="page__label offers__label">
+      Ціна
+    </div>
+    <div class="page__value offers__value offers__value--chanels">
+      32 700
+    </div>
+
+    <button class="page__arrow page__arrow-prev">
+      <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+    </button>
+
+    <button class="page__arrow page__arrow-next">
+      <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+    </button>
+  </div>
+  <!--#endregion -->
+
+  <div class="shadow"></div>
+
+<!--#region formEditChanel-->
+<div class="form" id="formEditChanel">
+  <form action="" class="form__container">
+    <h5 class="form__title">Редагувати канал</h5>
+
+    <label class="form__label" for="name">Назва</label>
+    <input class="form__input" type="text" id="name" placeholder="..." required>
+
+    <label class="form__label page__regular" for="subscribers">Підписники</label>
+    <input class="form__input" type="text" id="subscribers" placeholder="..." required>
+
+
+    <label class="form__label page__regular" for="views">Перегляди</label>
+    <input class="form__input" type="number" id="views" placeholder="..." required>
+
+
+    <label class="form__label page__regular" for="price">Ціна</label>
+    <input class="form__input" type="number" id="price" placeholder="..." required>
+
+    <div class="form__buttons">
+      <button class="button button--cancel">Відмінити</button>
+      <button type="submit" class="button form__buttons-add">Зберегти</button>
+    </div>
+  </form>
+</div>
+<!--#endregion -->
+
+<!--#region formAddChanel-->
+<div class="form" id="formAddChanel">
+  <form action="" class="form__container">
+    <h5 class="form__title">Додати новий канал</h5>
+
+    <label class="form__label" for="name">Назва</label>
+    <input class="form__input" type="text" id="name" placeholder="..." required>
+
+    <label class="form__label page__regular" for="subscribers">Підписники</label>
+    <input class="form__input" type="text" id="subscribers" placeholder="..." required>
+
+
+    <label class="form__label page__regular" for="views">Перегляди</label>
+    <input class="form__input" type="number" id="views" placeholder="..." required>
+
+
+    <label class="form__label page__regular" for="price">Ціна</label>
+    <input class="form__input" type="number" id="price" placeholder="..." required>
+
+    <div class="form__buttons">
+      <button class="button button--cancel">Відмінити</button>
+      <button type="submit" class="button form__buttons-add">Зберегти</button>
+    </div>
+  </form>
+</div>
+<!--#endregion -->
+
+
+  <!--#region footer  -->
+  <footer class="footer">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M10 14C10.5523 14 11 14.4448 11 14.9934V15.0066C11 15.5552 10.5523 16 10 16C9.44772 16 9 15.5552 9 15.0066V14.9934C9 14.4448 9.44772 14 10 14Z"
+        fill="white" />
+      <path
+        d="M10.1407 12C10.121 11.6519 10.2147 11.3069 10.4078 11.0168C10.6008 10.7267 10.8828 10.5073 11.2111 10.3917C11.6134 10.2375 11.9745 9.99198 12.266 9.6743C12.5575 9.35662 12.7714 8.97549 12.8908 8.56094C13.0103 8.14638 13.0321 7.7097 12.9544 7.28529C12.8768 6.86087 12.7019 6.4603 12.4434 6.11511C12.185 5.76993 11.8501 5.48955 11.4651 5.29605C11.0801 5.10255 10.6555 5.00121 10.2248 5.00001C9.79404 4.99881 9.36891 5.09779 8.98285 5.28915C8.5968 5.48051 8.26035 5.75902 8 6.10277"
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </footer>
+  <!--#endregion -->
+</body>
+
+</html>

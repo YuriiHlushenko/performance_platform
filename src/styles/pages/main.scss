@@ -1,0 +1,55 @@
+.main {
+  &__container {
+    padding: 0 12px;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 22px;
+
+    // &-button {
+    //   border: none;
+    //   background: none;
+    //   position: absolute;
+
+    //   &--prev {
+    //     transform: rotateY(180deg);
+    //   }
+
+    //   &--next {
+    //     right: 0;
+    //     ;
+    //   }
+    // }
+
+    &-card {
+      width: 100%;
+      margin: 0 24px;
+      box-sizing: border-box;
+
+      @extend %shadow;
+    }
+  }
+
+  &__balance {
+    color: #000;
+    padding: 30px 20px 40px;
+    background-color: $bg;
+    @extend %shadow;
+    margin-top: 12px;
+
+    &-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 0 53px;
+    }
+
+    &-value {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+}

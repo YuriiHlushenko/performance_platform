@@ -1,0 +1,40 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  color: $textBlack;
+  padding: 8px;
+  gap: 12px;
+
+  &__p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.85px;
+    background-color: $bg;
+    padding: 18px 18px 0px 18px;
+    border-radius: 20px;
+
+    &-button {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__form {
+    color: $textBlack;
+    background-color: $bg;
+    @extend %shadow;
+    padding: 20px 18px 14px;
+  }
+
+  &__label {
+    display: block;
+    color: $grey;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    background: $bg;
+  }
+
+}
