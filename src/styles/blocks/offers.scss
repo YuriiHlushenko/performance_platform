@@ -87,7 +87,13 @@
     }
   }
 
+  &--chanels {
+    margin-bottom: 15px;
 
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+  }
 
   &__head {
     display: none;
@@ -143,14 +149,6 @@
         position: absolute;
         right: 53px;
         gap: 30px;
-      }
-    }
-
-    &--chanels {
-      margin-bottom: 15px;
-
-      @include onTablet {
-        margin-bottom: 30px;
       }
     }
   }

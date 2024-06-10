@@ -162,127 +162,129 @@
   </div>
 
   <div class="offers offers--chanels">
-    <div class="offers__top offers__top--chanels">
-      <h5 class="offers__top-title page__label">
-        Статус
-      </h5>
+    <div class="offers__container">
+      <div class="offers__top offers__top--chanels">
+        <h5 class="offers__top-title page__label">
+          Статус
+        </h5>
 
-      <div class="offers__top-settings">
-        <button class="icon__button" id="editChanel">
-          <img class="icon__button-img" src="images/settings.png" alt="Редагувати канал">
-        </button>
+        <div class="offers__top-settings">
+          <button class="icon__button" id="editChanel">
+            <img class="icon__button-img" src="images/settings.png" alt="Редагувати канал">
+          </button>
 
-        <button class="icon__button" id="deleteChanel">
-          <img class="icon__button--bin" src="images/bin.svg" alt="прийняти">
-        </button>
+          <button class="icon__button" id="deleteChanel">
+            <img class="icon__button--bin" src="images/bin.svg" alt="прийняти">
+          </button>
+        </div>
       </div>
-    </div>
 
-    <img class="offers__logo" src="images/chanel.png" alt="лого медіа каналу">
+      <img class="offers__logo" src="images/chanel.png" alt="лого медіа каналу">
 
-    <div class="page__label offers__label">
-      Назва
-    </div>
-    <div class="page__value offers__value offers__value--chanels offers__value--creators">
-      Кріейтори
-    </div>
-    <div class="offers__value-subtitle">
-      Ком’юніті українських АІ-крінйторів
-    </div>
+      <div class="page__label offers__label">
+        Назва
+      </div>
+      <div class="page__value offers__value offers__value--chanels offers__value--creators">
+        Кріейтори
+      </div>
+      <div class="offers__value-subtitle">
+        Ком’юніті українських АІ-крінйторів
+      </div>
 
-    <div class="page__label offers__label">
-      Посилання
-    </div>
-    <div class="page__value offers__value offers__value--chanels">
-      wordwall.net
-    </div>
+      <div class="page__label offers__label">
+        Посилання
+      </div>
+      <div class="page__value offers__value offers__value--chanels">
+        wordwall.net
+      </div>
 
-    <div class="page__label offers__label">
-      Підписники
-    </div>
-    <div class="page__value offers__value offers__value--chanels">
-      20 989
-    </div>
+      <div class="page__label offers__label">
+        Підписники
+      </div>
+      <div class="page__value offers__value offers__value--chanels">
+        20 989
+      </div>
 
-    <div class="page__label offers__label">
-      Перегляди
-    </div>
-    <div class="page__value offers__value offers__value--chanels">
-      9 897
-    </div>
+      <div class="page__label offers__label">
+        Перегляди
+      </div>
+      <div class="page__value offers__value offers__value--chanels">
+        9 897
+      </div>
 
-    <div class="page__label offers__label">
-      Ціна
-    </div>
-    <div class="page__value offers__value offers__value--chanels">
-      32 700
-    </div>
+      <div class="page__label offers__label">
+        Ціна
+      </div>
+      <div class="page__value offers__value offers__value--chanels">
+        32 700
+      </div>
 
-    <button class="page__arrow page__arrow-prev">
-      <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
-    </button>
+      <button class="page__arrow page__arrow-prev">
+        <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+      </button>
 
-    <button class="page__arrow page__arrow-next">
-      <img src="images/arrow.svg" alt="" class="main__cards-arrow">
-    </button>
+      <button class="page__arrow page__arrow-next">
+        <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+      </button>
+    </div>
   </div>
   <!--#endregion -->
 
   <div class="shadow"></div>
 
-<!--#region formEditChanel-->
-<div class="form" id="formEditChanel">
-  <form action="" class="form__container">
-    <h5 class="form__title">Редагувати канал</h5>
+  <!--#region formEditChanel-->
+  <div class="form" id="formEditChanel">
+    <form action="" class="form__container">
+      <h5 class="form__title">Редагувати канал</h5>
 
-    <label class="form__label" for="name">Назва</label>
-    <input class="form__input" type="text" id="name" placeholder="..." required>
+      <label class="form__label" for="name">Назва</label>
+      <input class="form__input" type="text" id="name" placeholder="..." required>
 
-    <label class="form__label page__regular" for="subscribers">Підписники</label>
-    <input class="form__input" type="text" id="subscribers" placeholder="..." required>
-
-
-    <label class="form__label page__regular" for="views">Перегляди</label>
-    <input class="form__input" type="number" id="views" placeholder="..." required>
+      <label class="form__label page__regular" for="subscribers">Підписники</label>
+      <input class="form__input" type="text" id="subscribers" placeholder="..." required>
 
 
-    <label class="form__label page__regular" for="price">Ціна</label>
-    <input class="form__input" type="number" id="price" placeholder="..." required>
-
-    <div class="form__buttons">
-      <button class="button button--cancel">Відмінити</button>
-      <button type="submit" class="button form__buttons-add">Зберегти</button>
-    </div>
-  </form>
-</div>
-<!--#endregion -->
-
-<!--#region formAddChanel-->
-<div class="form" id="formAddChanel">
-  <form action="" class="form__container">
-    <h5 class="form__title">Додати новий канал</h5>
-
-    <label class="form__label" for="name">Назва</label>
-    <input class="form__input" type="text" id="name" placeholder="..." required>
-
-    <label class="form__label page__regular" for="subscribers">Підписники</label>
-    <input class="form__input" type="text" id="subscribers" placeholder="..." required>
+      <label class="form__label page__regular" for="views">Перегляди</label>
+      <input class="form__input" type="number" id="views" placeholder="..." required>
 
 
-    <label class="form__label page__regular" for="views">Перегляди</label>
-    <input class="form__input" type="number" id="views" placeholder="..." required>
+      <label class="form__label page__regular" for="price">Ціна</label>
+      <input class="form__input" type="number" id="price" placeholder="..." required>
+
+      <div class="form__buttons">
+        <button class="button button--cancel">Відмінити</button>
+        <button type="submit" class="button form__buttons-add">Зберегти</button>
+      </div>
+    </form>
+  </div>
+  <!--#endregion -->
+
+  <!--#region formAddChanel-->
+  <div class="form" id="formAddChanel">
+    <form action="" class="form__container">
+      <h5 class="form__title">Додати новий канал</h5>
+
+      <label class="form__label" for="name">Назва</label>
+      <input class="form__input" type="text" id="name" placeholder="..." required>
+
+      <label class="form__label page__regular" for="subscribers">Підписники</label>
+      <input class="form__input" type="text" id="subscribers" placeholder="..." required>
 
 
-    <label class="form__label page__regular" for="price">Ціна</label>
-    <input class="form__input" type="number" id="price" placeholder="..." required>
+      <label class="form__label page__regular" for="views">Перегляди</label>
+      <input class="form__input" type="number" id="views" placeholder="..." required>
 
-    <div class="form__buttons">
-      <button class="button button--cancel">Відмінити</button>
-      <button type="submit" class="button form__buttons-add">Зберегти</button>
-    </div>
-  </form>
-</div>
-<!--#endregion -->
+
+      <label class="form__label page__regular" for="price">Ціна</label>
+      <input class="form__input" type="number" id="price" placeholder="..." required>
+
+      <div class="form__buttons">
+        <button class="button button--cancel">Відмінити</button>
+        <button type="submit" class="button form__buttons-add">Зберегти</button>
+      </div>
+    </form>
+  </div>
+  <!--#endregion -->
 
 
   <!--#region footer  -->

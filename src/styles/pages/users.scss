@@ -1,11 +1,20 @@
 .users {
   margin: 8px;
-  padding: 0 0 14px;
 
   @include onTablet {
     margin: 16px;
-    padding: 0 0 28px;
   }
+
+  &__container {
+    width: calc(100vw - 16px);
+    padding: 0 0 14px;
+
+    @include onTablet {
+      padding: 0 0 28px;
+      width: calc(100vw - 32px);
+    }
+  }
+
 
   @include onDesktop {
     flex-grow: 1;
