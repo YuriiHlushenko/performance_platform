@@ -2,12 +2,32 @@
   margin: 8px;
   padding: 0 0 14px;
 
+  @include onTablet {
+    margin: 16px;
+    padding: 0 0 28px;
+  }
+
+  @include onDesktop {
+    flex-grow: 1;
+    margin: 0;
+    padding: 160px 20px 0 40px;
+    background: none;
+  }
+
   &--open {
     background-color: $detailBG;
+
+  @include onDesktop {
+    background: none;
+  }
   }
 
   &__brand {
     padding: 18px;
+
+    @include onTablet {
+      padding: 36px;
+    }
   }
 
   &__top {
@@ -15,11 +35,19 @@
 
     &-title {
       margin-bottom: 6px;
+
+      @include onTablet {
+        margin-bottom: 12px;
+      }
     }
   }
 
   &__value {
     margin-bottom: 40px;
+
+    @include onTablet {
+      margin-bottom: 80px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -30,10 +58,31 @@
     padding: 0 4px;
     margin-bottom: 6px;
 
+    @include onTablet {
+      padding: 0 8px;
+      margin-bottom: 12px;
+    }
+
     &-icon {
       position: absolute;
       right: 11px;
       bottom: 12px;
+
+      @include onTablet {
+        right: 22px;
+        bottom: 22px;
+      }
+
+      &>img {
+        @include onTablet {
+          @include square(42px);
+        }
+
+        @include onDesktop {
+          display: none;
+        }
+      }
+
     }
   }
 
@@ -44,6 +93,11 @@
     background-color: $bg;
     transition: all $duration;
 
+    @include onTablet {
+      padding: 28px;
+      margin: 0 8px 28px;
+    }
+
     &-top {
       display: flex;
       justify-content: space-between;
@@ -53,6 +107,10 @@
       margin-top: 15px;
       display: none;
       transition: transform $duration;
+
+      @include onTablet {
+        margin-top: 30px;
+      }
 
       &--balance {
         display: block;
@@ -69,24 +127,42 @@
     &-buttons {
       display: flex;
       gap: 10px;
+
+      @include onTablet {
+        gap: 20px;
+      }
     }
 
     &-value {
       margin-bottom: 20px;
+
+      @include onTablet {
+        margin-bottom: 40px;
+      }
     }
 
     &-status {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+
+      @include onTablet {
+        margin-bottom: 14px;
+      }
 
       &--label {
         margin-bottom: 0;
         line-height: 26px;
       }
     }
+
     &--balance {
       margin: 8px;
       position: relative;
+
+      @include onTablet {
+        margin: 16px;
+      }
     }
   }
 
@@ -96,7 +172,12 @@
 
   &__roll {
     display: block;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px;
     margin: 0 auto;
+
+    @include onTablet {
+      padding: 20px 80px;
+      border-radius: 40px;
+    }
   }
 }

@@ -4,12 +4,61 @@
 .icon {
   width: 20px;
 
+  @include onTablet {
+    width: 40px;
+  }
+
+  &__downWhite {
+    // position: relative;
+
+    &--payout {
+      position: absolute;
+      width: 10px;
+      height: 6px;
+      bottom: 4px;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      stroke: $textWhite;
+    }
+  }
+
   &__button {
     display: flex;
     align-items: center;
     background: none;
     border: none;
     padding: 0;
+
+    &-img {
+      @include square(18px);
+
+      @include onTablet {
+        @include square(40px);
+      }
+
+      @include onDesktop {
+        @include square(26px);
+      }
+    }
+
+    &--down {
+      @include onTablet {
+        @include square(78px);
+      }
+    }
+
+    &--bin {
+      @include onTablet {
+        width: 44px;
+        height: 48px;
+      }
+
+      @include onDesktop {
+        width: 23px;
+        height: 26px;
+      }
+    }
   }
 }
 
@@ -26,6 +75,21 @@
   font-weight: 400;
   line-height: 18.8px;
 
+  @include onTablet {
+    font-size: 33px;
+    line-height: 40px;
+    padding: 20px 40px;
+    gap: 20px;
+    border-radius: 42px;
+  }
+
+  @include onDesktop {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.8px;
+  }
+
   &--light {
     font-family: "DM Sans", sans-serif;
     color: #000;
@@ -34,6 +98,17 @@
     border-radius: 13px;
     font-weight: 500;
     line-height: 32px;
+
+    @include onTablet {
+      padding: 12px 20px;
+      border-radius: 27px;
+    }
+
+    @include onDesktop {
+      font-size: 28px;
+      font-weight: 500;
+      padding: 15px 20px;
+    }
   }
 
   &--active {
@@ -43,6 +118,14 @@
   &--cancel {
     background: #A3AED0;
     padding: 10px 22px;
+
+    @include onTablet {
+      padding: 20px 44px;
+    }
+
+    // @include onDesktop {
+    //   padding: 10px 40px;
+    // }
   }
 
   &__status {
@@ -55,12 +138,22 @@
       background-color: #DDE4BA;
       color: #0FAF62;
     }
+
+    @include onTablet {
+      padding: 10px 40px;
+    }
   }
 
   &--card {
     padding: 15px 20px;
     border-radius: 20px;
     margin: 0 14px 10px 0;
+
+    @include onTablet {
+      padding: 30px 40px;
+      border-radius: 40px;
+      margin: 0 28px 20px 0;
+    }
   }
 
   &--add {
@@ -79,11 +172,50 @@
   padding-bottom: 46px;
   min-width: 320px;
 
+  @include onTablet {
+    min-height: calc(100vh - 90px);
+    padding-bottom: 90px;
+  }
+
+  @include onDesktop {
+    padding-bottom: 0;
+  }
+
+
   &__body {
-    margin: 0;
+    margin: 0 auto;
+    // position: relative;
+    max-width: 1920px;
+
+    @include onDesktop {
+      position: relative;
+    }
 
     &--with-menu {
       overflow: hidden;
+    }
+  }
+
+  &__grid {
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: 295px 1fr;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__background {
+    display: none;
+    z-index: -1;
+
+    @include onDesktop {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
@@ -92,9 +224,22 @@
     justify-content: space-between;
     padding: 8px 8px 12px 8px;
 
+    @include onTablet {
+      padding: 16px 16px 24px 16px;
+    }
+
+    @include onDesktop {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
+
     &-container {
       display: flex;
       align-items: center;
+
+      @include onDesktop {
+        gap: 20px;
+      }
     }
   }
 
@@ -103,17 +248,13 @@
     font-family: "Public Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16.45px;
-    text-align: left;
 
     @include onTablet {
-      line-height: 18.8px;
-      font-size: 16px;
+      font-size: 28px;
     }
 
     @include onDesktop {
       font-size: 20px;
-      line-height: 23.5px;
     }
   }
 
@@ -126,12 +267,27 @@
     align-items: center;
     margin-top: 4px;
 
+    @include onDesktop {
+      display: none;
+    }
+
     &-h5 {
       font-size: 16px;
       font-weight: 400;
       line-height: 18.8px;
       text-align: left;
       margin: 0;
+
+      @include onTablet {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 30.55px;
+      }
+    }
+
+    @include onTablet {
+      padding: 40px 0;
+      margin-top: 8px;
     }
   }
 
@@ -145,6 +301,13 @@
     @include onTablet {
       font-size: 45.47px;
       line-height: 53.42px;
+      margin-bottom: 12px;
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+      line-height: 23.5px;
+      color: $textGray;
     }
   }
 
@@ -156,8 +319,17 @@
     color: $textBlack;
 
     @include onTablet {
+      margin-bottom: 24px;
       font-size: 35.13px;
       line-height: 41.28px;
+    }
+
+    @include onDesktop {
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: $textBlue;
+      margin-bottom: 20px;
     }
   }
 
@@ -168,6 +340,14 @@
     top: 50%;
     transform: translateY(-50%);
 
+    @include onTablet {
+      height: 61px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+
     &-prev {
       left: 0;
       transform: rotateY(180deg) translateY(-50%);
@@ -176,75 +356,15 @@
     &-next {
       right: 0;
     }
+
+    &>img {
+      @include onTablet {
+        height: 61px;
+      }
+    }
   }
 }
 
-.info {
-  font-family: "DM Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 22px;
-
-  &__container {
-    overflow: hidden;
-    position: relative;
-    padding: 12px;
-    border-radius: 10px;
-    background-color: $bg;
-    color: #000;
-
-    &::after {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      height: 3.5px;
-      content: '';
-      background-color: #FF0000;
-      border-bottom: 10px;
-    }
-
-    &:nth-child(2) {
-      &::after {
-        background-color: #FFD600;
-      }
-    }
-
-    &:nth-child(3) {
-      &::after {
-        background-color: #0FB600;
-      }
-    }
-
-    &:nth-child(4) {
-      &::after {
-        background-color: #9E00FF;
-      }
-    }
-
-    &:nth-child(5) {
-      &::after {
-        background-color: #144C9F;
-      }
-    }
-  }
-
-  &__title {
-    color: #434343;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    margin: 0;
-  }
-
-  &__value {
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin: 0;
-  }
-}
 
 .shadow {
   transform: translateX(-100%);

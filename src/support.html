@@ -101,7 +101,7 @@
       Чи можу я додавати або редагувати більше ніж одного користувача одночасно?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
@@ -109,7 +109,7 @@
       Як редагувати дані існуючого користувача?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
@@ -117,7 +117,7 @@
       Які «додаткові дані» можна вибрати?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
@@ -125,7 +125,7 @@
       Як створити та визначати дозволи для ролі?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
@@ -133,7 +133,7 @@
       Які адміністративні функції тепер доступні для RapidLite?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
@@ -141,13 +141,12 @@
       Як користуватися вкладкою PSAP?
 
       <button class="icon__button support__p-button">
-        <img src="images/down.svg" alt="більше">
+        <img class="icon__button--down" src="images/down.svg" alt="більше">
       </button>
     </div>
 
-    <!--#region editOffer-->
-    <form action="" class="support__form" id="feedback"">
-        <h5 class=" form__title">Зворотній зв’язок</h5>
+    <form action="" class="form__container support__form" id="feedback">
+      <h5 class="form__title">Зворотній зв’язок</h5>
 
       <label class="support__label form__label" for="name">Вкажіть ім’я</label>
       <input class="support__input form__input" type="text" id="name" required>
@@ -156,14 +155,13 @@
       <input class="support__input form__input" type="email" id="email" required>
 
       <label class="support__label form__label" for="message">Повідомлення</label>
-      <input class="support__input form__input" type="text" id="message" required>
+      <input class="support__input--message form__input" type="text" id="message" required>
 
       <div class="form__buttons">
         <button class="button">Додати файл</button>
         <button type="submit" class="button form__buttons-add">Відправити</button>
       </div>
     </form>
-    <!--#endregion -->
   </div>
 
   <!--#region footer  -->

@@ -1,13 +1,13 @@
 .menu {
   position: fixed;
   display: grid;
-  grid-template-columns: 220px 1fr;
   z-index: 1;
   left: 0;
   right: 0;
   overflow-y: auto;
   transform: translateX(-100%);
   transition: transform $duration;
+  grid-template-columns: 220px 1fr;
 
   top: 52px;
   height: calc(100vh - 52px);
@@ -16,6 +16,15 @@
     grid-template-columns: 455px 1fr;
     top: 108px;
     height: calc(100vh - 108px);
+    background-color: $main;
+  }
+
+  @include onDesktop {
+    display: block;
+    position: static;
+    transform: none;
+    height: initial;
+    z-index: 0;
   }
 
   &:target {
@@ -32,6 +41,10 @@
     height: 100%;
     background-color: #000;
     opacity: 0.3;
+
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &__list {
@@ -46,17 +59,32 @@
 
     @include onTablet {
       padding: 90px 0 165px 30px;
+      gap: 90px;
+    }
+
+    @include onDesktop {
+      padding: 140px 20px;
+      height: 100%;
+      box-sizing: border-box;
+      gap: 12px;
+      align-items: center;
     }
   }
 
   &__item {
     flex-shrink: 1;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140.62%;
-    color: $white;
     // padding: 0 80px 90px;
     margin: 0;
+
+    @include onDesktop {
+      width: 100%;
+    }
+
+    &:first-child {
+      @include onDesktop {
+        display: none;
+      }
+    }
   }
 
   &__link {
@@ -73,6 +101,40 @@
 
     &:hover {
       opacity: 0.5;
+    }
+
+    @include onTablet {
+      font-size: 33.07px;
+      line-height: 38.85px;
+      gap: 16px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 18.8px;
+      padding: 20px;
+      text-align: center;
+      background-color: $menuItems;
+      box-sizing: border-box;
+      border-radius: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &--active {
+      @include onDesktop {
+        background-color: $menuItemsActive;
+      }
+    }
+
+    &-svg {
+      @include onTablet {
+        width: 41px;
+      }
+
+      @include onDesktop {
+        width: 20px;
+      }
     }
   }
 }

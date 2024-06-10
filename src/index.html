@@ -11,7 +11,6 @@
 </head>
 
 <body class="page__body">
-
   <!--#region header -->
   <header class="header">
     <a href="/" class="header__logo">
@@ -25,135 +24,142 @@
   </header>
   <!--#endregion -->
 
-  <!--#region menu -->
-  <aside class="page__menu menu" id="menu">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="/" class="menu__link">
-          <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
-          Головна
-        </a>
-      </li>
+  <img src="images/rectangle.png" alt="background" class="page__background">
 
-      <li class="menu__item">
-        <a href="manager.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
-          Менеджер
-        </a>
-      </li>
+  <div class="page__grid">
+    <!--#region menu -->
+    <aside class="page__menu menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/" class="menu__link">
+            <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
+            Головна
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="users.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
-          Користувачі
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="manager.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
+            Менеджер
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="chanels.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
-          Медіа канали
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="users.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
+            Користувачі
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="offers.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
-          Офери
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="chanels.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
+            Медіа канали
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="profile.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
-          Профіль
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="offers.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
+            Офери
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="balance.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
-          Баланс
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="profile.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
+            Профіль
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="support.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
-          Технічна підтримка
-        </a>
-      </li>
-    </ul>
+        <li class="menu__item">
+          <a href="balance.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
+            Баланс
+          </a>
+        </li>
 
-    <a href="#" class="menu__cross"></a>
-  </aside>
-  <!--#endregion -->
+        <li class="menu__item">
+          <a href="support.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
 
-  <!--#region main -->
-  <main class="main">
-    <div class="page__title">
-      <img class="icon" src="images/home.svg" alt="головна">
-      <h5 class="page__title-h5">Головна</h5>
-    </div>
+      <a href="#" class="menu__cross"></a>
+    </aside>
+    <!--#endregion -->
 
-    <div class="page__buttons">
-      <button class="button button--light">Платіжний метод</button>
-      <div class="page__buttons-container">
-        <button class="button" id="addCard">Додати карту</button>
-      </div>
-    </div>
-    <div class="main__container">
-
-      <div class="main__cards">
-        <button class="page__arrow page__arrow-prev">
-          <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
-        </button>
-
-        <img class="main__cards-card" src="images/card.png" alt="card">
-
-        <button class="page__arrow page__arrow-next">
-          <img src="images/arrow.svg" alt="" class="main__cards-arrow">
-        </button>
-      </div>
-
-      <div class="info">
-        <div class="info__container">
-          <h6 class="info__title">Індекс</h6>
-          <p class="info__value">601,78</p>
+    <div class="page__content">
+      <!--#region main -->
+      <main class="main">
+        <div class="page__title">
+          <img class="icon" src="images/home.svg" alt="головна">
+          <h5 class="page__title-h5">Головна</h5>
         </div>
 
-        <div class="info__container">
-          <h6 class="info__title">Зачислення</h6>
-          <p class="info__value">3002,49</p>
+        <div class="page__buttons">
+          <button class="button button--light">Платіжний метод</button>
+          <div class="page__buttons-container">
+            <button class="button" id="addCard">Додати карту</button>
+          </div>
         </div>
 
-        <div class="info__container">
-          <h6 class="info__title">Бюджет</h6>
-          <p class="info__value">216</p>
+        <div class="main__container">
+          <div class="main__cards">
+            <button class="page__arrow page__arrow-prev">
+              <img src="images/arrow.svg" alt="" class="page__arrow-svg">
+            </button>
+
+            <img class="main__cards-card" src="images/card.png" alt="card">
+
+            <button class="page__arrow page__arrow-next">
+              <img src="images/arrow.svg" alt="" class="page__arrow-svg">
+            </button>
+          </div>
+
+          <div class="info">
+            <div class="info__container">
+              <h6 class="info__title">Індекс</h6>
+              <p class="info__value">601,78</p>
+            </div>
+
+            <div class="info__container">
+              <h6 class="info__title">Зачислення</h6>
+              <p class="info__value">3002,49</p>
+            </div>
+
+            <div class="info__container">
+              <h6 class="info__title">Бюджет</h6>
+              <p class="info__value">216</p>
+            </div>
+
+            <div class="info__container">
+              <h6 class="info__title">Сповіщення</h6>
+              <p class="info__value">212</p>
+            </div>
+          </div>
+
+          <button class="button button--light">Особистий баланс</button>
+
+          <div class="main__balance">
+            <h6 class="main__balance-title">Баланс</h6>
+            <div class="main__balance-value">$85,400.00</div>
+          </div>
         </div>
 
-        <div class="info__container">
-          <h6 class="info__title">Сповіщення</h6>
-          <p class="info__value">212</p>
+        <div class="page__buttons">
+          <button id="withdraw" class="button">Вивести баланс</button>
+          <button id="topUp" class="button">Поповнити баланс</button>
         </div>
-      </div>
+      </main>
+      <!--#endregion -->
 
-      <button class="button button--light">Особистий баланс</button>
-
-      <div class="main__balance">
-        <h6 class="main__balance-title">Баланс</h6>
-        <div class="main__balance-value">$85,400.00</div>
-      </div>
+      <div class="shadow"></div>
     </div>
+  </div>
 
-    <div class="page__buttons">
-      <button id="withdraw" class="button">Вивести баланс</button>
-      <button id="topUp" class="button">Поповнити баланс</button>
-    </div>
-  </main>
-  <!--#endregion -->
-
-  <div class="shadow"></div>
 
   <!--#region formAddCard-->
   <div class="form" id="formAddCard">

@@ -5,13 +5,23 @@
   padding: 8px;
   gap: 12px;
 
+  @include onTablet {
+    padding: 16px;
+    gap: 24px;
+  }
+
   &__p {
     font-size: 22px;
     font-weight: 400;
-    line-height: 25.85px;
     background-color: $bg;
     padding: 18px 18px 0px 18px;
     border-radius: 20px;
+
+    @include onTablet {
+      padding: 36px 36px 0px 36px;
+      border-radius: 40px;
+      font-size: 46px;
+    }
 
     &-button {
       display: flex;
@@ -21,20 +31,17 @@
   }
 
   &__form {
-    color: $textBlack;
-    background-color: $bg;
-    @extend %shadow;
-    padding: 20px 18px 14px;
+    position: static;
+    transform: none;
+    margin: 0;
   }
 
-  &__label {
-    display: block;
-    color: $grey;
-    margin-bottom: 8px;
-  }
+  &__input--message {
+    height: 144px;
 
-  &__input {
-    background: $bg;
+    @include onTablet {
+      height: 300px;
+    }
   }
 
 }

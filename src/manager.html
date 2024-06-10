@@ -25,227 +25,657 @@
   </header>
   <!--#endregion -->
 
-  <!--#region menu -->
-  <aside class="page__menu menu" id="menu">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="/" class="menu__link">
-          <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
-          Головна
-        </a>
-      </li>
+  <div class="page__grid">
+    <!--#region menu -->
+    <aside class="page__menu menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/" class="menu__link">
+            <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
+            Головна
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="manager.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
-          Менеджер
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="manager.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
+            Менеджер
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="users.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
-          Користувачі
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="users.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
+            Користувачі
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="chanels.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
-          Медіа канали
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="chanels.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
+            Медіа канали
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="offers.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
-          Офери
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="offers.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
+            Офери
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="profile.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
-          Профіль
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="profile.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
+            Профіль
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="balance.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
-          Баланс
-        </a>
-      </li>
+        <li class="menu__item">
+          <a href="balance.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
+            Баланс
+          </a>
+        </li>
 
-      <li class="menu__item">
-        <a href="support.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
-          Технічна підтримка
-        </a>
-      </li>
-    </ul>
+        <li class="menu__item">
+          <a href="support.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
 
-    <a href="#" class="menu__cross"></a>
-  </aside>
-  <!--#endregion -->
+      <a href="#" class="menu__cross"></a>
+    </aside>
+    <!--#endregion -->
 
-  <!--#region account -->
+    <!--#region account -->
+    <div class="page__content">
+      <div class="page__title">
+        <img class="icon" src="images/person.svg" alt="Менеджер">
+        <h5 class="page__title-h5">Менеджер</h5>
+      </div>
 
-  <div class="page__title">
-    <img class="icon" src="images/person.svg" alt="Менеджер">
-    <h5 class="page__title-h5">Менеджер</h5>
-  </div>
+      <img src="images/rectangle.png" alt="background" class="page__background">
 
-  <div class="account">
-    <div class="account__grid">
-      <div class="account__info">
-        <div class="page__label ">
-          Admin id:
-        </div>
-        <div class="page__value">
-          110A
-        </div>
-
-        <div class="apage__label">
-          Ім’я:
-        </div>
-        <div class="page__value">
-          Adela Parkson
+      <div class="info users__info info--manager">
+        <div class="info__container">
+          <h6 class="info__title">Ліди</h6>
+          <p class="info__value">601,78</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
         </div>
 
-        <div class="apage__label">
-          Адреса:
-        </div>
-        <div class="page__value">
-          Khumaltar, Lalitpur
-        </div>
-
-        <div class="apage__label">
-          Номер телефону:
-        </div>
-        <div class="page__value">
-          9841236978
+        <div class="info__container">
+          <h6 class="info__title">Списання</h6>
+          <p class="info__value">3002,49</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
         </div>
 
-        <div class="apage__label">
-          Email:
-        </div>
-        <div class="page__value">
-          Adela98@gmail.com
+        <div class="info__container">
+          <h6 class="info__title">Approve</h6>
+          <p class="info__value">216</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
         </div>
 
-        <div class="apage__label">
-          Пароль:
+        <div class="info__container">
+          <h6 class="info__title">Сповіщення</h6>
+          <p class="info__value">212</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
         </div>
-        <div class="page__value">
-          *******
+
+        <div class="info__container">
+          <h6 class="info__title">Баланс</h6>
+          <p class="info__value">216</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/settings.png" alt="change">
+          </button>
         </div>
       </div>
 
-      <div class="account__managment">
-        <img src="images/avatar.png" alt="" class="account__managment-img">
+      <div class="account">
+        <div class="account__grid">
+          <div class="account__info">
+            <div class="account__info-flex">
+              <div class="page__label ">
+                Admin id:
+              </div>
+              <div class="page__value">
+                110A
+              </div>
+            </div>
 
-        <button class="button account__managment-btn">Вихід</button>
-        <button class="button account__managment-btn">Видалити</button>
+            <div class="account__info-flex">
+              <div class="page__label">
+                Ім’я:
+              </div>
+              <div class="page__value">
+                Adela Parkson
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Адреса:
+              </div>
+              <div class="page__value">
+                Khumaltar, Lalitpur
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Номер телефону:
+              </div>
+              <div class="page__value">
+                9841236978
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Email:
+              </div>
+              <div class="page__value">
+                Adela98@gmail.com
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Пароль:
+              </div>
+              <div class="page__value">
+                *******
+              </div>
+            </div>
+          </div>
+
+          <div class="account__managment">
+            <img src="images/avatar.png" alt="" class="account__managment-img">
+
+            <button class="button button--light account__managment-btn">Вихід</button>
+            <button class="button account__managment-btn">Видалити</button>
+          </div>
+        </div>
+
+        <button class="button account__edit">
+          Редагувати особисті дані
+        </button>
+        <button class="button account__edit account__edit--save button--light">
+          Зберегти зміни
+        </button>
       </div>
-    </div>
 
-    <button class="button account__edit">
-      Редагувати особисті дані
-    </button>
-  </div>
-
-  <div class="page__buttons account__buttons">
-    <button class="button button--light">Додані офери</button>
-    <div class="page__buttons-container">
-      <button class="button" id="addOffer">Додати офер</button>
-    </div>
-  </div>
-
-  <div class="offers">
-    <div class="offers__top">
-      <h5 class="offers__top-title page__label">
-        UID 112 Статус
-      </h5>
-
-      <div class="offers__top-settings">
-        <button class="icon__button" id="editOffer">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_5_4742)">
+      <div class="page__buttons account__buttons">
+        <button class="button button--light">Додані офери</button>
+        <div class="page__buttons-container">
+          <button class="button button--light account__buttons-search" id="addOffer">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M17.9993 10.4546C17.9798 10.529 17.9665 10.606 17.9391 10.6774C17.9023 10.7736 17.8263 10.8206 17.7218 10.8227C17.4187 10.8289 17.1156 10.8397 16.8125 10.843C16.4793 10.8466 16.1459 10.8452 15.8125 10.8423C15.7494 10.8417 15.7177 10.858 15.6966 10.9225C15.5429 11.3945 15.364 11.8565 15.1285 12.2942C15.0803 12.3839 15.0854 12.4497 15.1582 12.5245C15.4665 12.8408 15.7718 13.1602 16.0751 13.4814C16.2111 13.6255 16.3437 13.7733 16.4715 13.925C16.5677 14.0392 16.5681 14.06 16.4661 14.1691C16.1522 14.5052 15.8401 14.843 15.5161 15.1691C15.103 15.5846 14.6814 15.9916 14.259 16.398C14.0636 16.586 14.0175 16.5872 13.8153 16.4014C13.5544 16.1616 13.3023 15.9119 13.048 15.6649C12.8647 15.4868 12.6831 15.3071 12.5031 15.1259C12.4661 15.0886 12.438 15.0825 12.3879 15.1033C11.8978 15.3059 11.4056 15.5042 10.9157 15.7073C10.8893 15.7182 10.8596 15.7612 10.8594 15.7894C10.856 16.2738 10.8603 16.7582 10.8549 17.2426C10.8529 17.4163 10.8378 17.5911 10.8135 17.7632C10.7929 17.9085 10.7279 17.9651 10.5846 17.9685C9.98148 17.9828 9.37816 17.9987 8.77484 18C8.32181 18.001 7.86859 17.983 7.41556 17.9683C7.27464 17.9638 7.20274 17.896 7.18418 17.7527C7.1649 17.6039 7.15174 17.4534 7.14994 17.3035C7.14399 16.8072 7.14291 16.3107 7.14418 15.8141C7.14436 15.7447 7.12093 15.7193 7.0584 15.694C6.58338 15.502 6.10981 15.3064 5.63785 15.1069C5.57857 15.0818 5.54595 15.0839 5.5 15.1291C5.07922 15.5414 4.65646 15.9515 4.23281 16.3607C4.18127 16.4106 4.12108 16.4517 4.06414 16.4958C3.9953 16.5489 3.92538 16.5494 3.85924 16.4918C3.73923 16.3873 3.61417 16.2875 3.50208 16.1749C2.86812 15.5381 2.23507 14.9005 1.6067 14.2583C1.40956 14.0567 1.40811 14.0076 1.60237 13.8001C1.97413 13.4029 2.35599 13.0154 2.73369 12.6239C2.77964 12.5764 2.82217 12.525 2.87209 12.4818C2.9175 12.4426 2.91191 12.4092 2.89065 12.358C2.69062 11.879 2.49258 11.399 2.2985 10.9175C2.27543 10.8603 2.25183 10.8421 2.19002 10.8415C1.59553 10.8372 1.00121 10.8293 0.406903 10.8206C0.347436 10.8197 0.287067 10.8108 0.228681 10.7983C0.098214 10.7705 0.0369448 10.7031 0.0313584 10.5683C0.0174828 10.2348 0.000183214 9.90092 3.01035e-06 9.56726C-0.000177193 8.89939 0.00775177 8.23134 0.0187442 7.56347C0.020366 7.46171 0.0416301 7.35416 0.0807342 7.26071C0.125425 7.15371 0.236791 7.14106 0.34239 7.13997C0.951838 7.13347 1.56111 7.12479 2.17056 7.12298C2.2594 7.1228 2.29255 7.09388 2.31778 7.01182C2.46519 6.53103 2.66251 6.07012 2.89029 5.6224C2.92273 5.55859 2.91948 5.52154 2.86722 5.46858C2.45203 5.04653 2.03666 4.62466 1.63031 4.19412C1.40019 3.9501 1.40415 3.92263 1.63499 3.67572C2.33508 2.92688 3.05409 2.19665 3.81311 1.50709C3.93583 1.39557 3.96502 1.39105 4.08756 1.50384C4.38796 1.78057 4.68061 2.06597 4.97705 2.34722C5.14914 2.51061 5.32358 2.67184 5.49441 2.83669C5.54343 2.88404 5.58704 2.88567 5.64578 2.8553C6.10782 2.61653 6.58644 2.41717 7.08399 2.26606C7.14508 2.24744 7.14345 2.21129 7.14363 2.16484C7.1449 1.67447 7.14418 1.18391 7.14976 0.693536C7.15156 0.534658 7.16382 0.375056 7.18328 0.217261C7.2031 0.0562131 7.25068 0.0233167 7.41466 0.0182557C7.54333 0.0142792 7.67181 0.00632624 7.80048 0C8.76763 0 9.7346 0 10.7018 0C10.7457 0.0773609 10.8057 0.150022 10.8292 0.233167C10.8556 0.326795 10.8556 0.429642 10.856 0.528512C10.8585 1.07293 10.8587 1.61735 10.8564 2.16177C10.8562 2.22431 10.8769 2.2516 10.9348 2.2704C11.4292 2.43108 11.9032 2.64148 12.3663 2.87645C12.4366 2.91206 12.4746 2.90049 12.527 2.84916C12.9604 2.42439 13.3935 1.99909 13.8333 1.58102C14.0501 1.37496 14.064 1.37695 14.2763 1.58319C14.8407 2.13176 15.4033 2.68232 15.961 3.23777C16.1437 3.41978 16.3124 3.61662 16.482 3.81147C16.5679 3.91034 16.5663 3.95372 16.4861 4.05873C16.4151 4.15164 16.3403 4.24292 16.2589 4.3266C15.8857 4.70961 15.5105 5.091 15.1328 5.46948C15.0807 5.52172 15.0776 5.5595 15.1083 5.62403C15.3301 6.09054 15.5525 6.55706 15.7011 7.05376C15.7206 7.11864 15.7608 7.11756 15.8098 7.1181C16.2569 7.12316 16.7042 7.12642 17.1512 7.13473C17.352 7.13853 17.5529 7.14702 17.7529 7.16347C17.8886 7.1745 17.9818 7.29018 17.9845 7.42321C17.9886 7.63324 17.9948 7.84327 18 8.0533C18 8.85384 18 9.65438 18 10.4549L17.9993 10.4546ZM3.97475 2.11423C3.35557 2.73113 2.75874 3.32561 2.15578 3.92606C2.18317 3.95119 2.21074 3.97414 2.23597 3.99981C2.60917 4.37902 2.98634 4.75462 3.35377 5.13926C3.60371 5.4008 3.59038 5.42683 3.4282 5.75037C3.25754 6.09072 3.10023 6.43848 2.9539 6.79022C2.86902 6.99429 2.81496 7.21155 2.75189 7.42447C2.71027 7.56546 2.62161 7.64336 2.47618 7.65493C2.38356 7.66234 2.29057 7.67192 2.19777 7.67228C1.69914 7.67427 1.2007 7.67355 0.702076 7.67373C0.667657 7.67373 0.633058 7.67373 0.59882 7.67373V10.2434C0.624409 10.2462 0.644772 10.2501 0.664954 10.2501C0.94427 10.2507 1.22359 10.248 1.5029 10.2518C1.82709 10.2561 2.15109 10.2668 2.47528 10.2736C2.59367 10.2762 2.67477 10.3307 2.71585 10.4421C2.7418 10.5124 2.76901 10.5825 2.78938 10.6546C2.95048 11.2236 3.16438 11.7702 3.46442 12.2812C3.49163 12.3275 3.50875 12.3797 3.53271 12.428C3.56299 12.4889 3.55596 12.544 3.51181 12.595C3.41919 12.7016 3.33053 12.8119 3.23286 12.9137C2.90236 13.2589 2.57025 13.6027 2.23489 13.9434C2.17092 14.0085 2.16803 14.0562 2.23723 14.1117C2.24894 14.1211 2.25831 14.1332 2.26877 14.1438C2.80866 14.6922 3.34855 15.2406 3.88844 15.7888C3.90646 15.8071 3.92682 15.823 3.96304 15.8548C4.3002 15.5099 4.62997 15.1681 4.96533 14.8321C5.08805 14.709 5.22357 14.5986 5.35511 14.4846C5.41242 14.4348 5.47927 14.4273 5.54865 14.4598C5.67876 14.5211 5.80815 14.5841 5.93879 14.6447C6.21613 14.7732 6.48968 14.9113 6.77278 15.0254C6.99154 15.1134 7.22256 15.1714 7.44854 15.2412C7.58099 15.282 7.66586 15.365 7.68821 15.5045C7.69812 15.5667 7.70749 15.6298 7.70893 15.6925C7.72011 16.2281 7.72948 16.7634 7.73957 17.299C7.74011 17.3314 7.74281 17.3635 7.74461 17.4002H10.2675C10.2675 17.3406 10.2669 17.2871 10.2675 17.2336C10.274 16.6951 10.2768 16.1565 10.2887 15.6182C10.2947 15.3475 10.3325 15.3048 10.5868 15.2354C11.1038 15.0944 11.5993 14.9006 12.0722 14.6478C12.1964 14.5814 12.3234 14.5205 12.4501 14.4594C12.5182 14.4265 12.5852 14.4341 12.6444 14.482C12.726 14.5482 12.8109 14.6113 12.8856 14.6846C13.2547 15.0469 13.6209 15.412 13.9881 15.7758C14.0107 15.7981 14.0339 15.8196 14.0577 15.8423C14.6567 15.2419 15.2485 14.6489 15.8583 14.0376C15.8258 14.0133 15.7936 13.9954 15.7689 13.9701C15.3748 13.5651 14.9834 13.1573 14.5873 12.7544C14.4516 12.6165 14.4127 12.4761 14.5217 12.3051C14.5651 12.2371 14.5981 12.1621 14.6327 12.0887C14.7601 11.8201 14.8998 11.5564 15.009 11.2808C15.1146 11.0136 15.191 10.7347 15.2748 10.4593C15.3058 10.3571 15.366 10.2995 15.4699 10.289C15.5981 10.2762 15.7266 10.2581 15.855 10.2566C16.3385 10.2514 16.822 10.2518 17.3055 10.2501C17.3372 10.2501 17.3687 10.2501 17.3992 10.2501V7.67337C17.3565 7.67337 17.3206 7.67337 17.285 7.67337C16.7593 7.67228 16.2338 7.67517 15.7084 7.66849C15.34 7.66379 15.3224 7.65493 15.227 7.3294C15.0584 6.75299 14.8347 6.20188 14.5399 5.67825C14.4026 5.4346 14.4139 5.41128 14.5914 5.20071C14.6107 5.17775 14.6304 5.1548 14.6515 5.13329C15.0265 4.75155 15.4011 4.36962 15.7775 3.98915C15.8021 3.96438 15.839 3.95191 15.8608 3.93944C15.2422 3.31965 14.6488 2.72516 14.0532 2.12851C14.0389 2.1417 14.0233 2.15544 14.0085 2.17008C13.6812 2.49326 13.3553 2.81789 13.0258 3.1389C12.912 3.24988 12.7898 3.35254 12.6705 3.45774C12.5957 3.52371 12.5139 3.53908 12.4216 3.491C12.3551 3.45648 12.2856 3.4281 12.2176 3.39629C11.8727 3.2356 11.5316 3.06551 11.1813 2.91748C10.9836 2.83397 10.7715 2.78409 10.5644 2.72372C10.3979 2.6751 10.306 2.56755 10.2889 2.3962C10.2797 2.30347 10.27 2.21039 10.2696 2.1173C10.2673 1.62982 10.268 1.14234 10.2676 0.654675C10.2676 0.623044 10.2676 0.591594 10.2676 0.560143H7.74461C7.74263 0.597016 7.73993 0.62919 7.73921 0.661363C7.72912 1.215 7.71506 1.76845 7.71182 2.32209C7.71073 2.51477 7.65055 2.64744 7.45358 2.69697C7.41034 2.70781 7.36979 2.72914 7.32762 2.74486C7.00181 2.86542 6.67204 2.97604 6.35146 3.10907C6.07467 3.22385 5.80761 3.36267 5.53784 3.49371C5.4627 3.53022 5.40125 3.52118 5.34124 3.46642C5.20374 3.3408 5.05958 3.22204 4.92821 3.0901C4.60583 2.76637 4.28939 2.43687 3.97457 2.11369L3.97475 2.11423Z"
-                fill="black" />
-              <path
-                d="M9.03924 13.8412C6.40171 13.9674 4.15217 11.6416 4.16203 9.19942C3.99269 6.3219 6.46827 4.16143 8.91522 4.15383C11.647 4.14548 13.8548 6.30443 13.8461 9.01432C13.8366 11.9173 11.4067 13.924 9.03924 13.841V13.8412ZM7.30548 12.9199C8.99429 13.6895 11.2653 13.2193 12.4994 11.4354C13.7839 9.57855 13.4263 7.10388 11.6576 5.68401C9.9411 4.30609 7.47007 4.43063 5.9066 6.06864C5.13766 6.87416 4.74381 7.84865 4.7256 8.96325C4.71612 9.54779 4.8407 10.1114 5.06314 10.6704C5.1132 10.6297 5.14676 10.6066 5.17559 10.5785C5.51578 10.2485 5.84535 9.90679 6.199 9.59184C6.38787 9.42344 6.48724 9.2465 6.44362 8.99571C6.43831 8.96515 6.44248 8.93268 6.44343 8.90098C6.46941 7.98079 6.84373 7.225 7.55104 6.64597C8.2191 6.09901 8.99448 5.8824 9.85311 5.99593C9.98434 6.0132 10.1195 6.0582 10.2352 6.12218C10.3881 6.20666 10.3996 6.36385 10.2855 6.49295C10.2185 6.5687 10.1504 6.6435 10.0803 6.7164C9.64832 7.16482 9.21673 7.61324 8.78229 8.05919C8.71744 8.12564 8.6981 8.18601 8.73242 8.27638C8.82116 8.50913 8.89834 8.74644 8.98614 8.97977C8.99922 9.0147 9.03867 9.05115 9.07413 9.06444C9.31344 9.15348 9.55597 9.23435 9.79547 9.32301C9.85899 9.34655 9.89768 9.33288 9.94357 9.28713C10.324 8.90781 10.7051 8.52926 11.0893 8.15374C11.2361 8.0104 11.3859 7.86935 11.5438 7.73873C11.6639 7.63925 11.7968 7.65785 11.8895 7.78448C11.9441 7.8589 11.9858 7.94889 12.0103 8.03831C12.0922 8.33884 12.0845 8.64658 12.0454 8.95148C11.9584 9.6298 11.6629 10.2085 11.1815 10.6922C10.7377 11.1381 10.2221 11.4539 9.58726 11.5325C9.31211 11.5664 9.03317 11.5695 8.7565 11.5925C8.70796 11.5964 8.65031 11.6177 8.61656 11.6511C8.22156 12.0428 7.83093 12.4386 7.43746 12.8316C7.40446 12.8646 7.35895 12.8851 7.30548 12.9202V12.9199ZM9.4073 6.57268C9.40351 6.56528 9.39972 6.55769 9.39592 6.55028C9.27684 6.56167 9.15624 6.56528 9.03867 6.58559C8.62111 6.65774 8.25683 6.8491 7.92897 7.10957C7.41129 7.52097 7.11111 8.05597 7.06313 8.71948C7.04531 8.96477 7.05801 9.21214 7.04701 9.45818C7.04436 9.51798 7.01743 9.58956 6.97704 9.63265C6.65999 9.97191 6.33553 10.3043 6.0162 10.6417C5.83814 10.8296 5.66634 11.0237 5.48999 11.2131C5.43594 11.2712 5.43784 11.32 5.48411 11.3851C5.8207 11.8592 6.2265 12.2607 6.71062 12.584C6.77566 12.6275 6.8115 12.6267 6.86801 12.57C7.38512 12.0504 7.90527 11.5336 8.42693 11.0187C8.45822 10.9878 8.51226 10.9641 8.55569 10.9639C8.68501 10.9635 8.81415 10.9772 8.94347 10.9842C9.47177 11.0128 9.9595 10.886 10.3949 10.5847C10.9878 10.1743 11.3417 9.6074 11.4667 8.89756C11.4771 8.83814 11.4816 8.77777 11.489 8.71797C11.4773 8.71056 11.4655 8.70316 11.4539 8.69575C11.3789 8.75878 11.3002 8.81801 11.2292 8.88541C10.8788 9.2184 10.5289 9.55197 10.1821 9.88895C10.092 9.97647 9.99401 10.0013 9.87985 9.96033C9.4676 9.81225 9.05497 9.66569 8.64595 9.50887C8.59077 9.4878 8.53748 9.42002 8.51511 9.36155C8.3634 8.96401 8.22232 8.56248 8.0729 8.16399C8.03213 8.05521 8.05204 7.97433 8.13244 7.89194C8.53635 7.47826 8.93684 7.06116 9.33847 6.64521C9.3616 6.6211 9.38436 6.59661 9.4073 6.5723V6.57268Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_5_4742">
-                <rect width="18" height="18" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+                d="M12.899 12.5L16 15.5M7.96429 3.71429C9.73949 3.71429 11.1786 5.15337 11.1786 6.92857M15 7.5C15 11.366 11.866 14.5 8 14.5C4.13401 14.5 1 11.366 1 7.5C1 3.63401 4.13401 0.5 8 0.5C11.866 0.5 15 3.63401 15 7.5Z"
+                stroke="black" stroke-linecap="round" />
+            </svg>
+            Пошук
+
+          </button>
+          <button class="button account__buttons-addOffer" id="addOffer">Додати офер</button>
+        </div>
+      </div>
+
+      <div class="offers">
+        <div class="offers__scroll">
+          <div class="offers__container offers__head">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__top-title--white">
+                UID
+
+                <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+              </h5>
+
+            </div>
+
+            <div class="page__label offers__label">
+              Назва
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Посилання
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Бренд
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Виплати
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Payout
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Баланс
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Налаштування
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+          </div>
+
+          <div class="offers__container offers--active">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__wrapper">
+                <span>UID</span> 112 <span>Статус</span>
+              </h5>
+
+              <div class="offers__top-settings">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/settings.png" alt="Видалити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button--bin" src="images/bin.svg" alt="Видалити">
+                </button>
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value">
+                Mithlesha Kumara Singha
+              </div>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Бренд
+              </div>
+              <div class="page__value offers__value">
+                Kritipur, Kathmandu
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Виплати
+              </div>
+              <div class="page__value offers__value">
+                $122
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout">
+              RevShare
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Баланс
+              </div>
+              <div class="page__value offers__value">
+                $1489
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__container">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__wrapper">
+                <span>UID</span> 112 <span>Статус</span>
+              </h5>
+
+              <div class="offers__top-settings">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/settings.png" alt="Видалити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button--bin" src="images/bin.svg" alt="Видалити">
+                </button>
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value">
+                Mithlesha Kumara Singha
+              </div>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Бренд
+              </div>
+              <div class="page__value offers__value">
+                Kritipur, Kathmandu
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Виплати
+              </div>
+              <div class="page__value offers__value">
+                $122
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout">
+              RevShare
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Баланс
+              </div>
+              <div class="page__value offers__value">
+                $1489
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__container">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__wrapper">
+                <span>UID</span> 112 <span>Статус</span>
+              </h5>
+
+              <div class="offers__top-settings">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/settings.png" alt="Видалити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button--bin" src="images/bin.svg" alt="Видалити">
+                </button>
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value">
+                Mithlesha Kumara Singha
+              </div>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Бренд
+              </div>
+              <div class="page__value offers__value">
+                Kritipur, Kathmandu
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Виплати
+              </div>
+              <div class="page__value offers__value">
+                $122
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout">
+              RevShare
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Баланс
+              </div>
+              <div class="page__value offers__value">
+                $1489
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__container">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__wrapper">
+                <span>UID</span> 112 <span>Статус</span>
+              </h5>
+
+              <div class="offers__top-settings">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/settings.png" alt="Видалити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button--bin" src="images/bin.svg" alt="Видалити">
+                </button>
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value">
+                Mithlesha Kumara Singha
+              </div>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Бренд
+              </div>
+              <div class="page__value offers__value">
+                Kritipur, Kathmandu
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Виплати
+              </div>
+              <div class="page__value offers__value">
+                $122
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout">
+              RevShare
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Баланс
+              </div>
+              <div class="page__value offers__value">
+                $1489
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__container">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__wrapper">
+                <span>UID</span> 112 <span>Статус</span>
+              </h5>
+
+              <div class="offers__top-settings">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/settings.png" alt="Видалити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button--bin" src="images/bin.svg" alt="Видалити">
+                </button>
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value">
+                Mithlesha Kumara Singha
+              </div>
+
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Бренд
+              </div>
+              <div class="page__value offers__value">
+                Kritipur, Kathmandu
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Виплати
+              </div>
+              <div class="page__value offers__value">
+                $122
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout">
+              RevShare
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Баланс
+              </div>
+              <div class="page__value offers__value">
+                $1489
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="page__arrow page__arrow-prev">
+          <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
         </button>
 
-        <button class="icon__button" id="deleteOffer">
-          <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="10" cy="13" r="9" stroke="#E84646" stroke-width="2" />
-            <path
-              d="M7.24433 11V15.6253C7.24433 16.3845 7.85982 17 8.61907 17H11.3815C12.1407 17 12.7562 16.3845 12.7562 15.6253V11M6 11H14"
-              stroke="#E84646" stroke-width="1.7" stroke-linecap="round" />
-            <path d="M8 10V10C8 9.44772 8.44772 9 9 9H11C11.5523 9 12 9.44772 12 10V10" stroke="#E84646"
-              stroke-width="1.7" stroke-linecap="round" />
-          </svg>
+        <button class="page__arrow page__arrow-next">
+          <img src="images/arrow.svg" alt="" class="main__cards-arrow">
         </button>
       </div>
-    </div>
 
-    <div class="page__label offers__label">
-      Назва
     </div>
-    <div class="page__value offers__value">
-      Mithlesha Kumara Singha
-    </div>
+  </div>
 
-    <div class="page__label offers__label">
-      Посилання
-    </div>
-    <div class="page__value offers__value">
-      wordwall.net
-    </div>
 
-    <div class="page__label offers__label">
-      Бренд
-    </div>
-    <div class="page__value offers__value">
-      Kritipur, Kathmandu
-    </div>
 
-    <div class="page__label offers__label">
-      Виплати
-    </div>
-    <div class="page__value offers__value">
-      $122
-    </div>
-
-    <div class="page__label offers__label">
-      Баланс
-    </div>
-    <div class="page__value offers__value">
-      $1489
-    </div>
-
-    <button class="page__arrow page__arrow-prev">
-      <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
-    </button>
-
-    <button class="page__arrow page__arrow-next">
-      <img src="images/arrow.svg" alt="" class="main__cards-arrow">
-    </button>
   </div>
   <!--#endregion -->
-
   <div class="shadow"></div>
+
+  </div>
+
 
   <!--#region editOffer-->
   <div class="form" id="formEditOffer">

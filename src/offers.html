@@ -14,6 +14,7 @@
 
   <!--#region header -->
   <header class="header">
+
     <a href="/" class="header__logo">
       <div class="header__logo-bg">
         <img src="images/logo.svg" alt="Neurolide" class="header__logo-img">
@@ -25,97 +26,98 @@
   </header>
   <!--#endregion -->
 
-  <!--#region menu -->
-  <aside class="page__menu menu" id="menu">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="/" class="menu__link">
-          <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
-          Головна
-        </a>
-      </li>
+  <div class="page__grid">
+        <!--#region menu -->
+        <aside class="page__menu menu" id="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/" class="menu__link">
+                <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
+                Головна
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="manager.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
-          Менеджер
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="manager.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
+                Менеджер
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="users.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
-          Користувачі
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="users.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
+                Користувачі
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="chanels.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
-          Медіа канали
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="chanels.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
+                Медіа канали
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="offers.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
-          Офери
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="offers.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
+                Офери
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="profile.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
-          Профіль
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="profile.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
+                Профіль
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="balance.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
-          Баланс
-        </a>
-      </li>
+            <li class="menu__item">
+              <a href="balance.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
+                Баланс
+              </a>
+            </li>
 
-      <li class="menu__item">
-        <a href="support.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
-          Технічна підтримка
-        </a>
-      </li>
-    </ul>
+            <li class="menu__item">
+              <a href="support.html" class="menu__link">
+                <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
+                Технічна підтримка
+              </a>
+            </li>
+          </ul>
 
-    <a href="#" class="menu__cross"></a>
-  </aside>
-  <!--#endregion -->
-
-  <!--#region account -->
+          <a href="#" class="menu__cross"></a>
+        </aside>
+        <!--#endregion -->
+    <div class="page__content">
+        <!--#region account -->
 
   <div class="page__title">
     <img class="icon" src="images/tablet.svg" alt="Медіа канали">
     <h5 class="page__title-h5">Офери</h5>
     <button class="icon__button button--add" id="addChanel">
-      <img src="images/add.svg" alt="додати канал">
+      <img class="icon__button-img" src="images/add.svg" alt="додати канал">
     </button>
   </div>
 
   <div class="offers offers--chanels">
     <div class="offers__top offers__top--chanels">
       <h5 class="offers__top-title page__label">
-        UID 112   Статус
+        UID 112 Статус
       </h5>
 
       <div class="offers__top-settings">
         <button class="icon__button" id="editOffer">
-          <img src="images/reject.svg" alt="відхилити">
+          <img class="icon__button-img" src="images/reject.svg" alt="відхилити">
         </button>
 
         <button class="icon__button" id="deleteOffer">
-          <img src="images/done.svg" alt="прийняти">
+          <img class="icon__button-img" src="images/done.svg" alt="прийняти">
         </button>
 
         <button class="icon__button" id="deleteOffer">
-          <img src="images/crown.svg" alt="обране">
+          <img class="icon__button-img" src="images/crown.svg" alt="обране">
         </button>
       </div>
     </div>
@@ -164,6 +166,8 @@
     </button>
   </div>
   <!--#endregion -->
+    </div>
+  </div>
 
   <div class="shadow"></div>
 

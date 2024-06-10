@@ -19,6 +19,17 @@
     margin: 0 8px;
     padding: 20px 18px;
     z-index: 1;
+
+    @include onTablet {
+      margin: 0 16px;
+      padding: 40px 36px;
+    }
+
+    @include onDesktop {
+      padding: 50px;
+      max-width: 470px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -26,11 +37,39 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 25.85px;
+
+    @include onTablet {
+      font-size: 46px;
+      line-height: 53.42px;
+      margin: 0 0 40px;
+    }
+
+    @include onDesktop {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.5px;
+      margin-bottom: 30px;
+    }
   }
 
   &__label {
     display: block;
     margin-bottom: 8px;
+
+    @include onTablet {
+      margin-bottom: 16px;
+      font-size: 28.93px;
+      line-height: 34px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.8px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
   }
 
   &__input {
@@ -41,12 +80,38 @@
     border-radius: 30px;
     border: 1px solid $grey;
     opacity: 0px;
+    background-color: $bg;
+
+    @include onTablet {
+      border: 2px solid $grey;
+      width: Fixed (636.53px)px;
+      padding: 22px 28px;
+      border-radius: 62px;
+      font-size: 28.93px;
+      line-height: 34px;
+      margin-bottom: 28px;
+    }
+
+    @include onDesktop {
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
 
     &::placeholder {
       font-size: 14px;
       font-weight: 400;
       line-height: 16.45px;
       color: $grey;
+
+      @include onTablet {
+        font-size: 28.93px;
+        line-height: 34px;
+      }
+
+      @include onDesktop {
+        font-size: 14px;
+      }
     }
 
     &:focus {
@@ -66,6 +131,14 @@
 
     &-add {
       padding: 10px 34px;
+
+      @include onTablet {
+        padding: 20px 70px;
+      }
+
+      @include onTablet {
+        padding: 10px 40px;
+      }
     }
   }
 }

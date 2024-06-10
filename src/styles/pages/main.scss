@@ -1,6 +1,21 @@
 .main {
+  @include onDesktop {
+    box-sizing: border-box;
+    padding: 180px 230px 67px;
+  }
+
+  #addCard {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
   &__container {
     padding: 0 12px;
+
+    @include onTablet {
+      padding: 0 24px;
+    }
   }
 
   &__cards {
@@ -9,20 +24,9 @@
     position: relative;
     margin-bottom: 22px;
 
-    // &-button {
-    //   border: none;
-    //   background: none;
-    //   position: absolute;
-
-    //   &--prev {
-    //     transform: rotateY(180deg);
-    //   }
-
-    //   &--next {
-    //     right: 0;
-    //     ;
-    //   }
-    // }
+    @include onTablet {
+      margin-bottom: 42px;
+    }
 
     &-card {
       width: 100%;
@@ -30,6 +34,10 @@
       box-sizing: border-box;
 
       @extend %shadow;
+
+      @include onTablet {
+        margin: 0 50px;
+      }
     }
   }
 
@@ -40,16 +48,32 @@
     @extend %shadow;
     margin-top: 12px;
 
+    @include onTablet {
+      margin-top: 24px;
+      padding: 62px 0 82px 40px;
+
+    }
+
     &-title {
       font-size: 17px;
       font-weight: 500;
       margin: 0 0 53px;
+
+      @include onTablet {
+        font-size: 35.13px;
+        margin-bottom: 110px;
+      }
     }
 
     &-value {
       font-size: 30px;
       font-weight: 600;
       line-height: 24px;
+
+      @include onTablet {
+        font-size: 62px;
+        line-height: 50px;
+      }
     }
   }
 }
