@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
   <link rel="stylesheet" href="./styles/main.scss">
   <script type="text/javascript" src="scripts/manager.js" defer></script>
+  <script type="text/javascript" src="scripts/menu.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -218,7 +219,7 @@
       <div class="page__buttons account__buttons">
         <button class="button button--light">Додані офери</button>
         <div class="page__buttons-container">
-          <button class="button button--light account__buttons-search" id="addOffer">
+          <button class="button button--light account__buttons-search">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12.899 12.5L16 15.5M7.96429 3.71429C9.73949 3.71429 11.1786 5.15337 11.1786 6.92857M15 7.5C15 11.366 11.866 14.5 8 14.5C4.13401 14.5 1 11.366 1 7.5C1 3.63401 4.13401 0.5 8 0.5C11.866 0.5 15 3.63401 15 7.5Z"
@@ -286,7 +287,7 @@
             </div>
           </div>
 
-          <div class="offers__container offers--active">
+          <div class="offers__container offers__container--active">
             <div class="offers__top">
               <h5 class="offers__top-title page__label offers__wrapper">
                 <span>UID</span> 112 <span>Статус</span>
@@ -655,7 +656,6 @@
             </div>
           </div>
         </div>
-        
         <button class="page__arrow page__arrow-prev">
           <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
         </button>
@@ -668,14 +668,9 @@
     </div>
   </div>
 
-
-
   </div>
   <!--#endregion -->
   <div class="shadow"></div>
-
-  </div>
-
 
   <!--#region editOffer-->
   <div class="form" id="formEditOffer">

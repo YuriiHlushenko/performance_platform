@@ -9,28 +9,12 @@
 
   @include onDesktop {
     overflow-x: initial;
-    margin: 0 230px 8px 200px;
+    max-width: 1200px;
+    padding: 30px;
+    margin: 0 auto 8px auto;
     border-radius: 20px;
     align-items: center;
 
-
-    &--active {
-      background: $main;
-
-      .page__label,
-      .offers__value {
-        color: $textWhite;
-      }
-
-      .offers__label-payout {
-        color: $textBlack;
-        background-color: $textWhite;
-      }
-
-      .icon__downWhite--payout {
-        stroke: $textBlack;
-      }
-    }
   }
 
   &__scroll {
@@ -50,7 +34,8 @@
     width: calc(100vw - 16px);
     flex-shrink: 0;
     box-sizing: border-box;
-
+    // position: relative;
+    height: min-content;
 
     @include onTablet {
       padding: 32px;
@@ -71,7 +56,9 @@
         background: $main;
 
         .page__label,
-        .offers__value {
+        .offers__value,
+        .offers__value-subtitle,
+        .page__value {
           color: $textWhite;
         }
 
@@ -85,6 +72,12 @@
         }
       }
     }
+
+    &--chanels {
+      @include onDesktop {
+        grid-template-columns: 1fr 2.5fr 2fr 2fr 1fr 1fr 1fr 1fr;
+      }
+    }
   }
 
   &--chanels {
@@ -92,6 +85,11 @@
 
     @include onTablet {
       margin-bottom: 30px;
+    }
+
+    @include onDesktop {
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -129,6 +127,7 @@
     }
 
     &-title {
+      position: relative;
       margin: 0;
 
       &--white {
@@ -149,14 +148,23 @@
         position: absolute;
         right: 53px;
         gap: 30px;
+        // top: 50%;
+        // transform: translateY(-50%);
+      }
+
+      &--profile {
+        @include onDesktop {
+          width: 8%;
+          right: 30px;
+          justify-content: space-between;
+          gap: initial;
+        }
       }
     }
   }
 
   // &__wrapper {
-  //   @include onDesktop {
-  //     height: min-content;
-  //   }
+  //   position: relative;
   // }
 
   &__wrapper>div,
@@ -196,6 +204,12 @@
         margin: 0 auto;
       }
 
+      &--chanels {
+        @include onDesktop {
+          margin: 0;
+        }
+      }
+
     }
   }
 
@@ -220,18 +234,34 @@
       @include onTablet {
         font-size: 24px;
       }
+
+      @include onDesktop {
+        font-size: 10px;
+      }
     }
 
     &--chanels {
       margin-bottom: 14px;
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
     }
 
     &-subtitle {
       margin-bottom: 14px;
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
     }
 
     &--creators {
       margin-bottom: 0;
+
+      @include onDesktop {
+        font-size: 16px;
+      }
     }
   }
 
@@ -251,6 +281,11 @@
     @include onTablet {
       width: 112px;
       margin-bottom: 14px;
+    }
+
+    @include onDesktop {
+      width: 36px;
+      margin-bottom: 0;
     }
   }
 }

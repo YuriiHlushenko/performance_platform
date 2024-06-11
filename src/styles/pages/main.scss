@@ -18,25 +18,61 @@
     }
   }
 
+  &__slider {
+    position: relative;
+    &-container {
+      overflow-x: scroll;
+      margin-bottom: 22px;
+
+      @include onTablet {
+        margin-bottom: 42px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 42px;
+        overflow-x: hidden;
+      }
+    }
+  }
+
+
   &__cards {
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 22px;
 
-    @include onTablet {
-      margin-bottom: 42px;
+    @include onDesktop {
+      display: flex;
+      gap: 30px;
+    }
+
+
+    &-container {
+      flex-shrink: 0;
+      width: calc(100vw - 24px);
+      padding: 0 24px;
+      box-sizing: border-box;
+
+      @include onTablet {
+        padding: 0 50px;
+        width: calc(100vw - 32px);
+      }
+
+      @include onDesktop {
+        padding: 0;
+        width: initial;
+        flex-shrink: 1;
+      }
     }
 
     &-card {
       width: 100%;
-      margin: 0 24px;
-      box-sizing: border-box;
-
       @extend %shadow;
 
-      @include onTablet {
-        margin: 0 50px;
+      @include onDesktop {
+        height: 218px;
+        width: 382px;
+        height: 218px;
       }
     }
   }
@@ -46,22 +82,35 @@
     padding: 30px 20px 40px;
     background-color: $bg;
     @extend %shadow;
-    margin-top: 12px;
+    margin: 12px;
 
     @include onTablet {
-      margin-top: 24px;
+      margin: 24px;
       padding: 62px 0 82px 40px;
 
+    }
+
+    @include onDesktop {
+      width: 382px;
+      height: 218px;
+      padding: 28px 88px 48px 28px;
     }
 
     &-title {
       font-size: 17px;
       font-weight: 500;
       margin: 0 0 53px;
+      letter-spacing: -0.02em;
 
       @include onTablet {
         font-size: 35.13px;
         margin-bottom: 110px;
+      }
+
+      @include onDesktop {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
       }
     }
 
@@ -69,10 +118,16 @@
       font-size: 30px;
       font-weight: 600;
       line-height: 24px;
+      letter-spacing: -0.02em;
 
       @include onTablet {
         font-size: 62px;
         line-height: 50px;
+      }
+
+      @include onDesktop {
+        font-size: 48px;
+        font-weight: 700;
       }
     }
   }

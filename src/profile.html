@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
   <link rel="stylesheet" href="./styles/main.scss">
   <script type="text/javascript" src="scripts/profile.js" defer></script>
+  <script type="text/javascript" src="scripts/menu.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -25,207 +26,531 @@
   </header>
   <!--#endregion -->
 
-  <!--#region menu -->
-  <aside class="page__menu menu" id="menu">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="/" class="menu__link">
-          <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
-          Головна
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="manager.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
-          Менеджер
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="users.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
-          Користувачі
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="chanels.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
-          Медіа канали
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="offers.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
-          Офери
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="profile.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
-          Профіль
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="balance.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
-          Баланс
-        </a>
-      </li>
-
-      <li class="menu__item">
-        <a href="support.html" class="menu__link">
-          <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
-          Технічна підтримка
-        </a>
-      </li>
-    </ul>
-
-    <a href="#" class="menu__cross"></a>
-  </aside>
-  <!--#endregion -->
-
   <!--#region account -->
-  <div class="page__title">
-    <img class="icon" src="images/profile.svg" alt="Профіль">
-    <h5 class="page__title-h5">Профіль</h5>
-  </div>
+  <div class="page__grid">
+    <!--#region menu -->
+    <aside class="page__menu menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/" class="menu__link">
+            <img class="icon menu__link-svg" src="images/home.svg" alt="головна">
+            Головна
+          </a>
+        </li>
 
-  <div class="account">
-    <div class="account__grid">
-      <div class="account__info">
-        <div class="page__label ">
-          Admin id:
-        </div>
-        <div class="page__value">
-          110A
-        </div>
+        <li class="menu__item">
+          <a href="manager.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/person.svg" alt="Менеджер">
+            Менеджер
+          </a>
+        </li>
 
-        <div class="page__label">
-          Ім’я:
-        </div>
-        <div class="page__value">
-          Adela Parkson
-        </div>
+        <li class="menu__item">
+          <a href="users.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/users.svg" alt="Користувачі">
+            Користувачі
+          </a>
+        </li>
 
-        <div class="page__label">
-          Адреса:
-        </div>
-        <div class="page__value">
-          Khumaltar, Lalitpur
-        </div>
+        <li class="menu__item">
+          <a href="chanels.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Медіа канали">
+            Медіа канали
+          </a>
+        </li>
 
-        <div class="page__label">
-          Номер телефону:
-        </div>
-        <div class="page__value">
-          9841236978
-        </div>
+        <li class="menu__item">
+          <a href="offers.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/tablet.svg" alt="Офери">
+            Офери
+          </a>
+        </li>
 
-        <div class="page__label">
-          Email:
-        </div>
-        <div class="page__value">
-          Adela98@gmail.com
-        </div>
+        <li class="menu__item">
+          <a href="profile.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/profile.svg" alt="Профіль">
+            Профіль
+          </a>
+        </li>
 
-        <div class="page__label">
-          Пароль:
-        </div>
-        <div class="page__value">
-          *******
-        </div>
+        <li class="menu__item">
+          <a href="balance.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/card.svg" alt="Баланс">
+            Баланс
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a href="support.html" class="menu__link">
+            <img class="icon menu__link-svg" src="images/support.svg" alt="Технічна підтримка">
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="menu__cross"></a>
+    </aside>
+    <!--#endregion -->
+
+    <!--#region account -->
+    <div class="page__content">
+      <div class="page__title">
+        <img class="icon" src="images/profile.svg" alt="Профіль">
+        <h5 class="page__title-h5">Профіль</h5>
       </div>
 
-      <div class="account__managment">
-        <img src="images/avatar.png" alt="" class="account__managment-img">
+      <img src="images/rectangle.png" alt="background" class="page__background">
 
-        <button class="button account__managment-btn">Вихід</button>
-        <button class="button account__managment-btn">Видалити</button>
-      </div>
-    </div>
-
-    <button class="button account__edit">
-      Редагувати особисті дані
-    </button>
-  </div>
-
-  <div class="page__buttons account__buttons">
-    <button class="button button--light">Медіа канали</button>
-    <div class="page__buttons-container">
-      <button class="button" id="addChanel">Додати канал</button>
-    </div>
-  </div>
-
-  <div class="offers offers--chanels">
-    <div class="offers__container">
-      <div class="offers__top offers__top--chanels">
-        <h5 class="offers__top-title page__label">
-          Статус
-        </h5>
-
-        <div class="offers__top-settings">
-          <button class="icon__button" id="editChanel">
-            <img class="icon__button-img" src="images/settings.png" alt="Редагувати канал">
-          </button>
-
-          <button class="icon__button" id="deleteChanel">
-            <img class="icon__button--bin" src="images/bin.svg" alt="прийняти">
+      <div class="info users__info info--manager">
+        <div class="info__container">
+          <h6 class="info__title">Ліди</h6>
+          <p class="info__value">601,78</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
           </button>
         </div>
+
+        <div class="info__container">
+          <h6 class="info__title">Списання</h6>
+          <p class="info__value">3002,49</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
+        </div>
+
+        <div class="info__container">
+          <h6 class="info__title">Approve</h6>
+          <p class="info__value">216</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
+        </div>
+
+        <div class="info__container">
+          <h6 class="info__title">Сповіщення</h6>
+          <p class="info__value">212</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/change.png" alt="change">
+          </button>
+        </div>
+
+        <div class="info__container">
+          <h6 class="info__title">Баланс</h6>
+          <p class="info__value">216</p>
+          <button class="icon__button users__info-icon">
+            <img src="images/settings.png" alt="change">
+          </button>
+        </div>
       </div>
 
-      <img class="offers__logo" src="images/chanel.png" alt="лого медіа каналу">
+      <div class="account">
+        <div class="account__grid">
+          <div class="account__info">
+            <div class="account__info-flex">
+              <div class="page__label ">
+                Admin id:
+              </div>
+              <div class="page__value">
+                110A
+              </div>
+            </div>
 
-      <div class="page__label offers__label">
-        Назва
-      </div>
-      <div class="page__value offers__value offers__value--chanels offers__value--creators">
-        Кріейтори
-      </div>
-      <div class="offers__value-subtitle">
-        Ком’юніті українських АІ-крінйторів
+            <div class="account__info-flex">
+              <div class="page__label">
+                Ім’я:
+              </div>
+              <div class="page__value">
+                Adela Parkson
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Адреса:
+              </div>
+              <div class="page__value">
+                Khumaltar, Lalitpur
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Номер телефону:
+              </div>
+              <div class="page__value">
+                9841236978
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Email:
+              </div>
+              <div class="page__value">
+                Adela98@gmail.com
+              </div>
+            </div>
+
+            <div class="account__info-flex">
+              <div class="page__label">
+                Пароль:
+              </div>
+              <div class="page__value">
+                *******
+              </div>
+            </div>
+          </div>
+
+          <div class="account__managment">
+            <img src="images/avatar.png" alt="" class="account__managment-img">
+
+            <button class="button button--light account__managment-btn">Вихід</button>
+            <button class="button account__managment-btn">Видалити</button>
+          </div>
+        </div>
+
+        <button class="button account__edit">
+          Редагувати особисті дані
+        </button>
+        <button class="button account__edit account__edit--save button--light">
+          Зберегти зміни
+        </button>
       </div>
 
-      <div class="page__label offers__label">
-        Посилання
-      </div>
-      <div class="page__value offers__value offers__value--chanels">
-        wordwall.net
+      <div class="page__buttons account__buttons">
+        <button class="button button--light">Додані офери</button>
+        <div class="page__buttons-container">
+          <button class="button button--light account__buttons-search">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.899 12.5L16 15.5M7.96429 3.71429C9.73949 3.71429 11.1786 5.15337 11.1786 6.92857M15 7.5C15 11.366 11.866 14.5 8 14.5C4.13401 14.5 1 11.366 1 7.5C1 3.63401 4.13401 0.5 8 0.5C11.866 0.5 15 3.63401 15 7.5Z"
+                stroke="black" stroke-linecap="round" />
+            </svg>
+            Пошук
+
+          </button>
+          <button class="button account__buttons-addOffer" id="addOffer">Додати офер</button>
+        </div>
       </div>
 
-      <div class="page__label offers__label">
-        Підписники
-      </div>
-      <div class="page__value offers__value offers__value--chanels">
-        20 989
-      </div>
+      <div class="offers">
+        <div class="offers__scroll">
 
-      <div class="page__label offers__label">
-        Перегляди
-      </div>
-      <div class="page__value offers__value offers__value--chanels">
-        9 897
-      </div>
+          <div class="offers__container offers__container--chanels offers--active offers__head">
+            <div class="offers__top">
+              <h5 class="offers__top-title page__label offers__top-title--white">
+                UID
 
-      <div class="page__label offers__label">
-        Ціна
-      </div>
-      <div class="page__value offers__value offers__value--chanels">
-        32 700
-      </div>
+                <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+              </h5>
 
-      <button class="page__arrow page__arrow-prev">
-        <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
-      </button>
+            </div>
 
-      <button class="page__arrow page__arrow-next">
-        <img src="images/arrow.svg" alt="" class="main__cards-arrow">
-      </button>
+            <div class="page__label offers__label">
+              Назва
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Посилання
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Підписники
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              CTR
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Payout
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Ціна
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+            <div class="page__label offers__label">
+              Статус
+
+              <img class="icon__downWhite" src="images/downWhite.svg" alt="sort">
+            </div>
+
+          </div>
+
+          <div class="offers__container  offers__container--active offers__container--chanels">
+            <div class="offers__top offers__top--chanels">
+              <h5 class="offers__top-title page__label page__mobile">
+                Статус
+              </h5>
+
+              <img class="offers__logo page__desktop" src="images/chanel.png" alt="лого медіа каналу">
+
+              <div class="offers__top-settings offers__top-settings--profile">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/reject.svg" alt="відхилити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/done.svg" alt="прийняти">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/crown.svg" alt="обране">
+                </button>
+              </div>
+            </div>
+
+            <img class="offers__logo page__mobile" src="images/chanel.png" alt="лого медіа каналу">
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value offers__value--chanels offers__value--creators">
+                Кріейтори
+              </div>
+              <div class="offers__value-subtitle">
+                Ком’юніті українських АІ-крінйторів
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Підписники
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                20 989
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Перегляди
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                9 897
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout offers__label-payout--chanels">
+              CPM
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Ціна
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                32 700
+              </div>
+            </div>
+
+          </div>
+
+          <div class="offers__container offers__container--chanels">
+            <div class="offers__top offers__top--chanels">
+              <h5 class="offers__top-title page__label page__mobile">
+                Статус
+              </h5>
+
+              <img class="offers__logo page__desktop" src="images/chanel.png" alt="лого медіа каналу">
+
+              <div class="offers__top-settings offers__top-settings--profile">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/reject.svg" alt="відхилити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/done.svg" alt="прийняти">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/crown.svg" alt="обране">
+                </button>
+              </div>
+            </div>
+
+            <img class="offers__logo page__mobile" src="images/chanel.png" alt="лого медіа каналу">
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value offers__value--chanels offers__value--creators">
+                Кріейтори
+              </div>
+              <div class="offers__value-subtitle">
+                Ком’юніті українських АІ-крінйторів
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Підписники
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                20 989
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Перегляди
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                9 897
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout offers__label-payout--chanels">
+              CPM
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Ціна
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                32 700
+              </div>
+            </div>
+
+          </div>
+
+          <div class="offers__container offers__container--chanels">
+            <div class="offers__top offers__top--chanels">
+              <h5 class="offers__top-title page__label page__mobile">
+                Статус
+              </h5>
+
+              <img class="offers__logo page__desktop" src="images/chanel.png" alt="лого медіа каналу">
+
+              <div class="offers__top-settings offers__top-settings--profile">
+                <button class="icon__button" id="editOffer">
+                  <img class="icon__button-img" src="images/reject.svg" alt="відхилити">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/done.svg" alt="прийняти">
+                </button>
+
+                <button class="icon__button" id="deleteOffer">
+                  <img class="icon__button-img" src="images/crown.svg" alt="обране">
+                </button>
+              </div>
+            </div>
+
+            <img class="offers__logo page__mobile" src="images/chanel.png" alt="лого медіа каналу">
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Назва
+              </div>
+              <div class="page__value offers__value offers__value--chanels offers__value--creators">
+                Кріейтори
+              </div>
+              <div class="offers__value-subtitle">
+                Ком’юніті українських АІ-крінйторів
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Посилання
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                wordwall.net
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Підписники
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                20 989
+              </div>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Перегляди
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                9 897
+              </div>
+            </div>
+
+            <div class="page__label offers__label offers__label-payout offers__label-payout--chanels">
+              CPM
+              <svg class="icon__downWhite icon__downWhite--payout" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 1L7.10344 6.29289C7.49396 6.68342 8.12713 6.68342 8.51765 6.29289L13.8105 1"
+                  stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="offers__wrapper">
+              <div class="page__label offers__label">
+                Ціна
+              </div>
+              <div class="page__value offers__value offers__value--chanels">
+                32 700
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <button class="page__arrow page__arrow-prev">
+          <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+        </button>
+
+        <button class="page__arrow page__arrow-next">
+          <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+        </button>
+      </div>
     </div>
   </div>
   <!--#endregion -->
@@ -259,10 +584,10 @@
   </div>
   <!--#endregion -->
 
-  <!--#region formAddChanel-->
-  <div class="form" id="formAddChanel">
+  <!--#region formAddOffer-->
+  <div class="form" id="formAddOffer">
     <form action="" class="form__container">
-      <h5 class="form__title">Додати новий канал</h5>
+      <h5 class="form__title">Додати оффер</h5>
 
       <label class="form__label" for="name">Назва</label>
       <input class="form__input" type="text" id="name" placeholder="..." required>

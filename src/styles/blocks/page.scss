@@ -55,10 +55,17 @@
       }
 
       @include onDesktop {
-        width: 23px;
-        height: 26px;
+        width: 27px;
+        height: 30px;
       }
     }
+  }
+
+  &__done {
+    padding-left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -203,8 +210,32 @@
     }
   }
 
+  &__desktop {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__mobile {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
   &__content {
     position: relative;
+
+    &--chanels {
+      @include onDesktop {
+        box-sizing: border-box;
+        flex-grow: 1;
+        margin: 0;
+        padding: 180px 20px 0 40px;
+        background: none;
+      }
+    }
   }
 
   &__background {
@@ -216,6 +247,11 @@
       position: absolute;
       right: 0;
       top: 0;
+    }
+
+    &--transform {
+      top: initial;
+      bottom: 0;
     }
   }
 
@@ -239,6 +275,15 @@
 
       @include onDesktop {
         gap: 20px;
+      }
+    }
+
+    &--chanels {
+      display: none;
+      padding: 36px 0;
+
+      @include onDesktop {
+        display: flex;
       }
     }
   }
@@ -321,7 +366,7 @@
     @include onTablet {
       margin-bottom: 24px;
       font-size: 35.13px;
-      line-height: 41.28px;
+
     }
 
     @include onDesktop {
