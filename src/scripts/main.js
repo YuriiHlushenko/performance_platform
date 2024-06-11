@@ -1,38 +1,28 @@
 'use strict';
 
-window.onload = function() {
-  document.getElementById('form').addEventListener(
-    'submit', stopDefAction, false);
-};
-
-function stopDefAction(evt) {
-  evt.preventDefault();
-  document.form.reset();
-}
-
 const buttonsClose = document.querySelectorAll(".button--cancel");
-const buttonAddCard = document.getElementById("addCard");
+const buttonsAddCard = document.querySelectorAll(".addCard");
 const shadow = document.querySelector(".shadow");
 const formAddCard = document.getElementById("formAddCard");
 const formWidthraw = document.getElementById("formWithdraw");
 const formTopUp = document.getElementById("formTopUp");
-const buttonWidthraw = document.getElementById("withdraw");
-const buttonTopUp = document.getElementById("topUp");
+const buttonsWidthraw = document.querySelectorAll(".withdraw");
+const buttonsTopUp = document.querySelectorAll(".topUp");
 
-buttonWidthraw.addEventListener("click", () => {
+buttonsWidthraw.forEach(b => b.addEventListener("click", () => {
   shadow.style.transform = "none";
   formWidthraw.style.transform = "none";
-});
+}));
 
-buttonTopUp.addEventListener("click", () => {
+buttonsTopUp.forEach(b => b.addEventListener("click", () => {
   shadow.style.transform = "none";
   formTopUp.style.transform = "none";
-});
+}));
 
-buttonAddCard.addEventListener("click", () => {
+buttonsAddCard.forEach(b => b.addEventListener("click", () => {
   shadow.style.transform = "none";
   formAddCard.style.transform = "none";
-});
+}))
 
 
 buttonsClose.forEach(btn => btn.addEventListener("click", () => {

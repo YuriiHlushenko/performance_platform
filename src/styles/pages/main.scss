@@ -1,7 +1,9 @@
 .main {
   @include onDesktop {
-    box-sizing: border-box;
-    padding: 180px 230px 67px;
+    // box-sizing: border-box;
+    padding: 180px 40px 67px;
+    max-width: 1060px;
+    margin: 0 auto;
   }
 
   #addCard {
@@ -16,12 +18,16 @@
     @include onTablet {
       padding: 0 24px;
     }
+    @include onDesktop {
+      padding: 0;
+    }
   }
 
   &__slider {
     position: relative;
+
     &-container {
-      overflow-x: scroll;
+      overflow-x: auto;
       margin-bottom: 22px;
 
       @include onTablet {
@@ -30,7 +36,6 @@
 
       @include onDesktop {
         margin-bottom: 42px;
-        overflow-x: hidden;
       }
     }
   }
@@ -46,7 +51,6 @@
       gap: 30px;
     }
 
-
     &-container {
       flex-shrink: 0;
       width: calc(100vw - 24px);
@@ -61,7 +65,7 @@
       @include onDesktop {
         padding: 0;
         width: initial;
-        flex-shrink: 1;
+        // flex-shrink: 1;
       }
     }
 
@@ -73,6 +77,21 @@
         height: 218px;
         width: 382px;
         height: 218px;
+      }
+    }
+
+    &-add {
+      display: block;
+      flex-shrink: 0;
+      flex-grow: 1;
+      background-color: $bg;
+      border-radius: 20px;
+      border: none;
+      height: calc(100vw * 0.45);
+      width: calc(100vw * 0.45);
+
+      @include onDesktop {
+        @include square(218px);
       }
     }
   }

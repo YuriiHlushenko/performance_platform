@@ -108,18 +108,31 @@
         </div>
 
         <div class="main__container">
-          <div class="main__cards">
-            <button class="page__arrow page__arrow-prev">
-              <img src="images/arrow.svg" alt="" class="page__arrow-svg">
-            </button>
+          <div class="main__slider">
+            <div class="main__slider-container">
+              <button class="page__arrow page__arrow-prev">
+                <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+              </button>
 
-            <img class="main__cards-card" src="images/card.png" alt="card">
-
-            <button class="page__arrow page__arrow-next">
-              <img src="images/arrow.svg" alt="" class="page__arrow-svg">
-            </button>
+              <button class="page__arrow page__arrow-next">
+                <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+              </button>
+              <div class="main__cards">
+                <div class="main__cards-container">
+                  <img class="main__cards-card" src="images/card.png" alt="card">
+                </div>
+                <div class="main__cards-container">
+                  <img class="main__cards-card" src="images/card.png" alt="card">
+                </div>
+                <button class="main__cards-add addCard">
+                  <img src="images/plus.svg" alt="додати" class="main__cardds-plus">
+                  <div class="main__cards-add-title">
+                    Додати нову карту
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
-
           <div class="info">
             <div class="info__container">
               <h6 class="info__title">Індекс</h6>
@@ -141,24 +154,28 @@
               <p class="info__value">212</p>
             </div>
           </div>
-
           <button class="button button--light">Особистий баланс</button>
 
-          <div class="main__balance">
-            <h6 class="main__balance-title">Баланс</h6>
-            <div class="main__balance-value">$85,400.00</div>
-          </div>
+
         </div>
 
+
+
+        <div class="main__balance">
+          <h6 class="main__balance-title">Баланс</h6>
+          <div class="main__balance-value">$85,400.00</div>
+        </div>
         <div class="page__buttons">
           <button id="withdraw" class="button">Вивести баланс</button>
           <button id="topUp" class="button">Поповнити баланс</button>
         </div>
-      </main>
-      <!--#endregion -->
-
-      <div class="shadow"></div>
     </div>
+
+    </main>
+    <!--#endregion -->
+
+    <div class="shadow"></div>
+  </div>
   </div>
 
 

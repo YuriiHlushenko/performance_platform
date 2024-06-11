@@ -113,4 +113,12 @@
       font-size: 40px;
     }
   }
+
+  &--support {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
 }
