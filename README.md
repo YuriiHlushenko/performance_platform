@@ -5,8 +5,6 @@
 - Tablet 640px
 - Mobile (> 320px)
 
-The task is partially completed!
-
 In this project I used HTML, JavaScript, SASS/SCSS, BEM.
 used gulp template
 node v14.21.3

@@ -11,16 +11,7 @@
   &__downWhite {
     // position: relative;
 
-    &--payout {
-      position: absolute;
-      width: 10px;
-      height: 6px;
-      bottom: 4px;
-      left: 50%;
-      z-index: 1;
-      transform: translateX(-50%);
-      stroke: $textWhite;
-    }
+
   }
 
   &__button {
@@ -449,4 +440,31 @@
   bottom: 0;
   background-color: #000;
   opacity: 0.3;
+}
+
+.select {
+  position: relative;
+
+  &__select {
+    appearance: none;
+    border: none;
+    outline: none;
+    text-align: center;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__arrow {
+      position: absolute;
+      width: 10px;
+      height: 6px;
+      bottom: 4px;
+      left: 50%;
+      z-index: 3;
+      transform: translateX(-50%);
+      stroke: $textWhite;
+  }
 }
