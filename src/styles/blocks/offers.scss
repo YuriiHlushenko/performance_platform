@@ -9,7 +9,6 @@
 
   @include onDesktop {
     overflow-x: initial;
-    max-width: 1200px;
     padding: 30px;
     margin: 0 auto 8px auto;
     border-radius: 20px;
@@ -51,10 +50,11 @@
 
     @include onDesktop {
       display: grid;
+      // grid-template-columns: repeat(8, auto);
       grid-template-columns: 0.7fr 3fr 2fr 2.3fr 1.2fr 1fr 1fr 1.8fr;
       border-radius: 20px;
       align-items: center;
-      gap: 10px;
+      // align-content: center;
       padding: 8px 25px;
       margin-bottom: 8px;
       width: 100%;
@@ -81,7 +81,6 @@
     }
 
     &--chanels {
-      max-width: initial;
       @include onDesktop {
         grid-template-columns: 1fr 2.5fr 2fr 2fr 1fr 1fr 1fr 1fr;
       }
@@ -96,9 +95,13 @@
     }
 
     @include onDesktop {
-      padding: 0;
-      // margin: 0;
+      padding: 0 20px 0 40px;
+      max-width: initial;
     }
+  }
+
+  &--maxWidth {
+    max-width: 1200px;
   }
 
   &__head {
@@ -111,7 +114,7 @@
       padding: 32px;
       gap: 0;
 
-      &>* {
+      & > * {
         color: $textWhite;
       }
     }
@@ -169,6 +172,16 @@
       &--mobile {
         @include onDesktop {
           display: none;
+        }
+      }
+
+      &--desktop {
+        display: none;
+
+        @include onDesktop{
+          justify-content: flex-end;
+          gap: 20px;
+          display: flex;
         }
       }
     }

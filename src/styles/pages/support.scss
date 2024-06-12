@@ -137,6 +137,13 @@
       justify-content: center;
       gap: 30px;
     }
+
+    &--addFile {
+      @include onDesktop {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
   }
 
   &__input--message {
@@ -145,5 +152,22 @@
     @include onTablet {
       height: 300px;
     }
+
+    @include onTablet {
+      height: 70px;
+    }
+  }
+
+  &__addFile {
+    text-align: right;
+    background: none;
+    background-color: none;
+    border: none;
+    box-shadow: 0;
+    color: $textGray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.45px;
+    text-align: right;
   }
 }

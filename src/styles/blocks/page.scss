@@ -215,6 +215,7 @@
     @include onDesktop {
       display: grid;
       grid-template-columns: 295px 1fr;
+      min-height: 100vh;
     }
   }
 
@@ -226,7 +227,7 @@
         box-sizing: border-box;
         flex-grow: 1;
         margin: 0;
-        padding: 180px 20px 0 40px;
+        padding: 180px 0 0;
         background: none;
       }
     }
@@ -238,6 +239,7 @@
 
     @include onDesktop {
       display: block;
+      width: 60%;
       position: absolute;
       right: 0;
       top: 0;
@@ -259,8 +261,9 @@
     }
 
     @include onDesktop {
-      padding: 15px 20px;
+      padding: 15px 0;
       font-size: 16px;
+      gap: 20px;
     }
 
     &-container {
@@ -278,6 +281,14 @@
 
       @include onDesktop {
         display: flex;
+      }
+    }
+
+    &--offers {
+      display: none;
+
+      @include onDesktop {
+        padding: 0;
       }
     }
 
@@ -301,6 +312,7 @@
 
     @include onDesktop {
       font-size: 20px;
+      line-height: 23.5px;
     }
   }
 
@@ -354,6 +366,7 @@
       font-size: 20px;
       line-height: 23.5px;
       color: $textGray;
+      width: max-content;
     }
   }
 
@@ -376,6 +389,7 @@
       font-weight: 400;
       color: $textBlue;
       margin-bottom: 20px;
+      width: max-content;
     }
   }
 
@@ -424,7 +438,6 @@
     }
   }
 }
-
 
 .shadow {
   transform: translateX(-100%);
