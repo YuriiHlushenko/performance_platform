@@ -1,14 +1,23 @@
 'use strict';
 
 window.onload = function() {
-  document.getElementById('formAddChane').addEventListener(
-    'submit', stopDefAction, false);
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#menu') {
+      document.body.classList.add('page__body--with-menu');
+    } else {
+      document.body.classList.remove('page__body--with-menu');
+    }
+  });
+
+
+  // document.getElementById('formAddChane').addEventListener(
+  //   'submit', stopDefAction, false);
 };
 
-function stopDefAction(evt) {
-  evt.preventDefault();
-  document.form.reset();
-}
+// function stopDefAction(evt) {
+//   evt.preventDefault();
+//   document.form.reset();
+// }
 
 const buttonsClose = document.querySelectorAll(".button--cancel");
 const formAddOffer = document.getElementById("formAddOffer");
@@ -27,10 +36,3 @@ buttonsClose.forEach(btn => btn.addEventListener("click", () => {
 }));
 
 
-window.addEventListener('hashchange', () => {
-  if (window.location.hash === '#menu') {
-    document.body.classList.add('page__body--with-menu');
-  } else {
-    document.body.classList.remove('page__body--with-menu');
-  }
-});
