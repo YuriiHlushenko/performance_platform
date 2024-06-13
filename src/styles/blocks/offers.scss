@@ -23,6 +23,10 @@
     }
   }
 
+  &__slider {
+    position: relative;
+  }
+
   &__scroll {
     display: flex;
     gap: 20px;
@@ -290,7 +294,7 @@
     }
 
     &--creators {
-      margin-bottom: 0;
+      margin: 0;
 
       @include onDesktop {
         font-size: 16px;
