@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page page--theme-dark" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -51,22 +51,25 @@
           <label class="login__form-chekbox-label" for="checkbox">Запам’ятати дані</label>
         </div>
 
-          <button type="submit" id="login" class="button form__buttons-add login__button-add">Зареєструватися</button>
+        <button type="submit" id="login" class="button form__buttons-add login__button-add">Зареєструватися</button>
       </form>
     </div>
     <!--#endregion -->
   </div>
   <!--#endregion -->
 
-
   <!--#region header -->
   <header class="header">
-    <a href="/index.html" class="header__logo">
-      <div class="header__logo-bg">
-        <img src="images/logo.svg" alt="Neurolide" class="header__logo-img">
-      </div>
-      <h1 class="header__logo-title">Neurolide</h1>
-    </a>
+    <div class="header__container">
+      <a href="/index.html" class="header__logo">
+        <div class="header__logo-bg">
+          <img src="images/logo.svg" alt="Neurolide" class="header__logo-img">
+        </div>
+        <h1 class="header__logo-title">Neurolide</h1>
+      </a>
+    </div>
+
+    <div class="header__switcher"></div>
 
     <a href="#menu" class="header__menu"></a>
   </header>
@@ -159,11 +162,15 @@
           <div class="main__slider">
             <div class="main__slider-container">
               <button class="page__arrow page__arrow-prev">
-                <img src="images/arrow.svg" alt="" class="main__cards-arrow main__cards-arrow--prev">
+                <svg width="7" height="32" viewBox="0 0 7 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.999999 31.2765L6 16.3702L1 1.46386" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
 
               <button class="page__arrow page__arrow-next">
-                <img src="images/arrow.svg" alt="" class="main__cards-arrow">
+                <svg width="7" height="32" viewBox="0 0 7 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.999999 31.2765L6 16.3702L1 1.46386" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
               <div class="main__cards">
                 <div class="main__cards-container">

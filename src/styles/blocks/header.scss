@@ -1,29 +1,42 @@
 .header {
+  position: relative;
   display: flex;
-  background: $main;
+  background: var(--bg-header);
   justify-content: space-between;
   align-items: center;
   padding: 7px 12px 7px 7px;
-  font-family: "Public Sans";
-  font-size: 45.47px;
-  font-weight: 400;
-  line-height: 53.42px;
-
-  @include onTablet {
-    padding: 15px 25px 15px 17px;
-  }
 
   @include onDesktop {
     position: absolute;
-    display: block;
-    left: 20px;
-    top: 20px;
-    width: 255px;
-    box-sizing: border-box;
-    padding: 15px 30px;
-    background: $logoBG;
-    border-radius: 20px;
-    z-index: 1;
+
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Public Sans";
+    font-size: 45.47px;
+    font-weight: 400;
+    line-height: 53.42px;
+
+    @include onTablet {
+      padding: 15px 25px 15px 17px;
+    }
+
+    @include onDesktop {
+      position: absolute;
+      display: block;
+      left: 20px;
+      top: 20px;
+      width: 255px;
+      box-sizing: border-box;
+      padding: 15px 30px;
+      background: $logoBG;
+      border-radius: 20px;
+      z-index: 1;
+    }
   }
 
   &__menu {
@@ -41,7 +54,8 @@
     align-items: center;
     gap: 20px;
     text-decoration: none;
-    color: $textWhite;
+    background: none;
+    color: var(--text--black);
 
     @include onDesktop {
       gap: 10px;
@@ -65,7 +79,7 @@
 
       @include onDesktop {
         font-size: 28px;
-        color: $textBlack;
+        color: #000;
         font-weight: 600;
       }
     }
@@ -129,6 +143,40 @@
   &__menu {
     @include onDesktop {
       display: none;
+    }
+  }
+
+  &__switcher {
+    justify-self: flex-end;
+    width: 50px;
+    background-color: var(--bg--page);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @include onTablet {
+      width: 80px;
+      margin-left: 90px;
+    }
+
+    @include onDesktop {
+      position: absolute;
+      margin: 0;
+      left: 110px;
+      top: 645px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50%;
+      padding-bottom: 50%;
+      border-radius: 50%;
+      background: var(--button--bg);
+      z-index: 3;
     }
   }
 }

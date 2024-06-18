@@ -1,6 +1,6 @@
 .account {
   padding: 26px 26px 8px;
-  color: $textBlack;
+  color: var(--text--white);
 
   @include onTablet {
     padding: 53px 53px 16px;
@@ -35,12 +35,12 @@
     }
   }
 
-
-
   &__managment {
     position: relative;
 
-    @include onDesktop {}
+    @include onDesktop {
+      margin-bottom: 10px;
+    }
 
     &-img,
     &-btn {

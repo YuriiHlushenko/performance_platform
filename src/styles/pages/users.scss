@@ -33,7 +33,7 @@
     }
 
     &--open {
-      background-color: $detailBG;
+      background-color: var(--bg-offers-box);
 
       @include onDesktop {
         background: none;
@@ -65,14 +65,6 @@
       padding: 0;
     }
   }
-
-  // &__brand {
-  //   padding: 18px;
-
-  //   @include onTablet {
-  //     padding: 36px;
-  //   }
-  // }
 
   &__top {
     margin-bottom: 0;
@@ -142,17 +134,13 @@
     padding: 14px;
     margin: 0 4px 14px;
     @extend %shadow;
-    background-color: $bg;
+    background-color: var(--bg--box);
     transition: all $duration;
 
     @include onTablet {
       padding: 28px;
       margin: 0 8px 28px;
     }
-
-    // @include onDesktop {
-    //   display: none;
-    // }
 
     &-top {
       display: flex;
@@ -217,7 +205,7 @@
         font-weight: 400;
         line-height: 16.45px;
         margin: 0;
-        color: rgba(0, 0, 0, 1);
+        color: var(--text--black);
 
       }
     }
@@ -244,8 +232,7 @@
           font-weight: 400;
           line-height: 16.45px;
           text-align: left;
-          color: $textGray;
-
+          color: var(--text--grey);
         }
       }
 

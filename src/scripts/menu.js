@@ -11,3 +11,21 @@ for (let i = 0; i < list.length; i++) {
     }
 }
 
+const page = document.querySelector('.page');
+const switcher = document.querySelector('.header__switcher');
+
+const theme = localStorage.getItem("theme");
+
+if (theme && theme === 'dark') {
+  page.classList.add('page--theme-dark');
+}
+
+switcher.addEventListener('click', ()=> {
+  if (page.classList.contains('page--theme-dark')) {
+    page.classList.remove('page--theme-dark');
+    localStorage.setItem("theme", "light");
+  } else {
+    page.classList.add('page--theme-dark');
+    localStorage.setItem("theme", "dark");
+  }
+})

@@ -18,6 +18,7 @@
     @include onTablet {
       padding: 0 24px;
     }
+
     @include onDesktop {
       padding: 0;
     }
@@ -81,10 +82,11 @@
     }
 
     &-add {
+      color: var(--text--black);
       display: block;
       flex-shrink: 0;
       flex-grow: 1;
-      background-color: $bg;
+      background-color: var(--bg--box);
       border-radius: 20px;
       border: none;
       height: calc(100vw * 0.45);
@@ -97,11 +99,12 @@
   }
 
   &__balance {
-    color: #000;
+    color: var(--text--black);
     padding: 30px 20px 40px;
-    background-color: $bg;
-    @extend %shadow;
+    background-color: var(--bg--box);
     margin: 12px;
+
+    @extend %shadow;
 
     @include onTablet {
       margin: 24px;
